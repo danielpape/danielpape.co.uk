@@ -1,0 +1,93 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    /* gap: 32px; */
+    padding: 32px 16px;
+    max-width: var(--max-width);
+    justify-content: space-between;
+    margin: auto;
+}
+.menu > * {
+    display: flex;
+    align-items: left;
+    /* gap: 32px; */
+    justify-content: flex-start;
+    margin: auto 0;
+
+    animation-duration: 1s;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  opacity: 0;
+  animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+
+
+.wordmark {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wordmark span {
+    font-weight: 500;
+}
+
+.CTA {
+    background-color: var(--dark-bg);
+    /* border: solid 1px #FDB825; */
+    color: var(--dark-text);
+    padding: 10px 14px;
+    border-radius: 32px;
+    font-size:16px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.CTA:hover{
+    /* background-color: #000000; */
+    transform: scale(1.06);
+}
+
+@media (prefers-color-scheme: dark) {
+    .CTA {
+        background-color: var(--dark-text);
+        color: var(--dark-bg);
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .CTA {
+        font-size: 16px;
+    }
+    .menu {
+        padding: 32px 16px;
+        gap: 16px;
+    }
+    }
+
+    /* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}

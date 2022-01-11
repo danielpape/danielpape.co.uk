@@ -1,0 +1,33 @@
+.leftColumn{
+    grid-column: 2 / span 5;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+.rightColumn {
+    grid-column: 7 / span 5;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  .rightColumn > p > a {
+    border-bottom: solid 2px rgb(253, 184, 37);
+    font-weight: 500;
+    padding-bottom: 1px;
+  }
+
+  @media only screen and (max-width: 767px) {
+.leftColumn{
+    grid-column: 1 / span 12;
+}
+.rightColumn{
+    margin-top: 32px;
+    grid-column: 1 / span 12;
+    align-items: flex-start;
+}
+  }
