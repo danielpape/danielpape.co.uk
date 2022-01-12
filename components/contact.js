@@ -10,9 +10,9 @@ export default function Contact() {
         <h2 className={styles.largeText}>
           If you want to work together or just say hi, get in touch
         </h2>
-        <button href="mailto:hello@bydanielpape.com" className={styles.CTA}>
+        <a href="mailto:hello@bydanielpape.com" className={styles.CTA}>
           Send Dan an Email
-        </button>
+        </a>
       </div>
       <div className={styles.avatar}>
         <Image
