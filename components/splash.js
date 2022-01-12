@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 import MedoriAmbient from "../public/images/MedoriAmbient.png"
 import EMOMicon from "../public/images/EMOMicon.png"
-import ESAmbient from "../public/images/ESAmbient.png"
+import ESambient from "../public/images/ESambient.png"
 import eveAppstore from "../public/images/eveAppstore.png"
 import EveOnDevice from "../public/images/EveOnDevice.png"
 import independentAmbient from "../public/images/independentAmbient.png"
@@ -83,7 +83,7 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering2(false)}
       >
         <Image
-          src={ESAmbient}
+          src={ESambient}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
           alt="The London Evening Standard website on an iPhone"
