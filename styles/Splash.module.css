@@ -227,11 +227,10 @@
         margin-top: -48px;
     }
     .item3 {
-        margin-top: 0;
+        display: none;
     }
     .item4 {
         grid-column: 8 / 11;
-        margin-top: -100px;
     }
     .item5 {
         margin-top: 0;
@@ -246,6 +245,7 @@
     }
     .item8 {
         margin-top: -180px;
+        display: none;
     }
   }
 
