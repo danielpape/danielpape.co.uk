@@ -2,6 +2,24 @@ import styles from "../styles/Splash.module.css";
 import Image from "next/image";
 import React, { useState } from "react";
 
+
+import MedoriAmbient from "../public/images/MedoriAmbient.png"
+import avatar from "../public/images/avatar.png"
+import EMOMIcon from "../public/images/EMOMIcon.png"
+import ESAmbient from "../public/images/ESAmbient.png"
+import eveAppstore from "../public/images/eveAppstore.png"
+import EveOnDevice from "../public/images/EveOnDevice.png"
+import independentAmbient from "../public/images/independentAmbient.png"
+import independentIcon from "../public/images/independentIcon.png"
+import NOnDevice from "../public/images/NOnDevice.png"
+
+
+
+
+
+
+
+
 export default function Splash() {
   const [isHovering1, setIsHovering1] = useState(false);
   const [isHovering2, setIsHovering2] = useState(false);
@@ -20,11 +38,9 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering1(false)}
       >
         <Image
-          src="/images/N-OnDevice.png"
+          src={NOnDevice}
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
           placeholder="blur"
-          width="1024"
-          height="743"
           alt="Next Store Finder Chatbot on an iPhone Device"
           className={styles.splashImage}
         />
@@ -45,11 +61,9 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering5(false)}
       >
         <Image
-          src="/images/Medori-ambient.png"
+          src={MedoriAmbient}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="166"
-          height="236"
           alt="A medication reminder app with timers running on an iPhone"
           className={styles.splashImageMediumRadius}
         />
@@ -70,11 +84,9 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering2(false)}
       >
         <Image
-          src="/images/ES-ambient.png"
+          src={ESAmbient}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="461"
-          height="323"
           alt="The London Evening Standard website on an iPhone"
           className={styles.splashImage}
         />
@@ -95,11 +107,9 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering3(false)}
       >
         <Image
-          src="/images/EMOM-icon.png"
+          src={EMOMIcon}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="166"
-          height="166"
           alt="The icon for Simple Timer App: A green circle showing progress"
         />
         <div
@@ -119,12 +129,10 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering4(false)}
       >
         <Image
-          src="/images/Eve-OnDevice.png"
+          src={EveOnDevice}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="264"
-          height="410"
-          alt="Eve Alarm app on an iPhone, showing the alarm time and a wheel to set the time"
+       alt="Eve Alarm app on an iPhone, showing the alarm time and a wheel to set the time"
           className={styles.splashImage}
         />
         <div
@@ -144,12 +152,10 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering6(false)}
       >
         <Image
-          src="/images/independent-ambient.jpg"
+          src={independentAmbient}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="461"
-          height="323"
-          alt="The Independent Subscriptions website on a Desktop Computer"
+         alt="The Independent Subscriptions website on a Desktop Computer"
           className={styles.splashImage}
         />
         <div
@@ -169,23 +175,19 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering7(false)}
       >
         <Image
-          src="/images/eve-appstore.png"
+          src={eveAppstore}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="166"
-          height="250"
           alt="A screenshot of the Apple App Store showing Eve Alarm in the What's Hot Section"
           className={styles.splashImageSmallRadius}
         />
       </div>
       <div className={styles.item8}>
         <Image
-          src="/images/independent-icon.png"
+          src={independentIcon}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-          width="166"
-          height="166"
-          alt="The icon for the Independent App: A red circle with an eagle carrying a newspaper in its claws"
+         alt="The icon for the Independent App: A red circle with an eagle carrying a newspaper in its claws"
           className={styles.splashImage}
         />
       </div>
