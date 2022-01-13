@@ -1,6 +1,8 @@
 import styles from "../styles/Contact.module.css";
 import Image from "next/image";
 
+import avatar from "../public/images/avatar.png"
+
 import React, { useState } from "react";
 
 export default function Contact() {
@@ -16,10 +18,10 @@ export default function Contact() {
       </div>
       <div className={styles.avatar}>
         <Image
-          src="/images/avatar.png"
+          src={avatar}
           width="165"
           height="172"
-          alt="Evening Standard website on device"
+          alt="A headshot of Daniel Pape"
           className={styles.splashImageSmallRadius}
         />
       </div>
