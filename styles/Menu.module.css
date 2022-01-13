@@ -25,6 +25,14 @@
     -webkit-animation-name: fadeIn;
 }
 
+.menuItems {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 
 
 .wordmark {
