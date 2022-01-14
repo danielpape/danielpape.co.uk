@@ -29,7 +29,7 @@ export default function AboutMe() {
         journeys and producing prototypes to test and gather feedback.
         </p>
         <p>
-        In my spare time I code iPhone and Android apps, a few of which heave been featured in the &quot;What&apos;s Hot&quot; section on the App Store by Apple.
+        In my spare time I code iPhone and Android apps, a few of which have been featured in the &quot;What&apos;s Hot&quot; section on the App Store by Apple.
         </p>
       </div>
     </div>
