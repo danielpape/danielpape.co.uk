@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../components/work/header.js"
 
-export default function Portfolio() {
+export default function Work() {
   return (
     <div className="gridContainer">
-     <p>Portfolio</p>
+     <Header/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Work from "../components/work";
+import Header from "../components/work";
+import Standard from "../components/work/standard"
 import Menu from "../components/menu";
 import styles from "../styles/Home.module.css";
 import React, { useState } from "react";
@@ -38,7 +39,8 @@ export default function Home() {
 
       <main>
         <Menu/>
-       <Work/>
+       <Header/>
+       <Standard/>
       </main>
     </div>
   );
