@@ -13,23 +13,29 @@ export default function AboutMe() {
         </h2>
       </div>
       <div className={styles.para1}>
+      <h3 className={styles.tag}>Currently</h3>
         <p>
-          Previously I led the design team at The Independent &amp; London
-          Evening Standard where I built a small but mighty team of UX &amp;
-          Product Designers.
-        </p>
-        <p>
-          Currently I work in the Innovation Team at Next, where I design and
+          Currently I work in the Innovation Team at <strong>Next</strong>, where I design and
           prototype the future of eCommerce.
         </p>
-      </div>
-      <div className={styles.para2}>
+        <h3 className={styles.tag}>Previously</h3>
         <p>
-        My focus is on maintaining design systems to build well structured user
-        journeys and producing prototypes to test and gather feedback.
+          Previously I led the design team at <strong>The Independent</strong> &amp; <strong>London
+          Evening Standard</strong> where I built a small but mighty team of UX &amp;
+          Product Designers.
         </p>
+      </div>
+
+      <div className={styles.para2}>
+      <h3 className={styles.tag}>What I do</h3>
         <p>
-        In my spare time I code iPhone and Android apps, a few of which have been featured in the &quot;What&apos;s Hot&quot; section on the App Store by Apple.
+        My focus is on maintaining <strong>design systems</strong> to build well structured user
+        journeys and producing <strong>prototypes</strong> to test and gather feedback.
+        </p>
+        <h3 className={styles.tag}>Side Projects</h3>
+
+        <p>
+        In my spare time I <strong>code</strong> iPhone and Android apps, a few of which have been <strong>featured</strong> in the &quot;What&apos;s Hot&quot; section on the <strong>App Store</strong> by Apple.
         </p>
       </div>
     </div>

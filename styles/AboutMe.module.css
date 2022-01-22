@@ -20,6 +20,13 @@
     margin-bottom: 32px;
 }
 
+.tag {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: solid 2px var(--primary-color);
+}
+
 .para1 {
     grid-column: 2 / span 5;
     /* I currently work in the Innovation Team at Next, over the past year I’ve worked on cutting-edge ecommerce projects including augmented reality, smart AI & chatbots. */
@@ -30,12 +37,15 @@ font-weight: normal;
 font-size: 1.313rem;
 line-height: 1.5;
 letter-spacing: .011em;
-
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
 
 }
 
 .para1 > p {
-    margin-bottom: 16px;;
+    margin-bottom: 40px;;
 }
 
 .para2 {
@@ -48,10 +58,14 @@ font-weight: normal;
 font-size: 1.313rem;
 line-height: 1.5;
 letter-spacing: .011em;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
 }
 
 .para2 > p {
-    margin-bottom: 16px;;
+    margin-bottom: 40px;;
 }
 
 .avatar {
