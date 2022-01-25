@@ -18,7 +18,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Homepage of Daniel Pape, a digital product designer from the UK." />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -39,6 +38,19 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32006853-1"></script>
+<script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-32006853-1', { page_path: window.location.pathname });
+            `,
+          }}
+        />
+
+
       </Head>
 
       <main>
