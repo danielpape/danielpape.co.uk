@@ -29,7 +29,7 @@ export default function AboutMe() {
       <div className={styles.para2}>
       <h3 className={styles.tag}>What I do</h3>
         <p>
-        My focus is on maintaining <strong>design systems</strong> to build well structured user
+        My focus is on utilising <strong>design systems</strong> to build well structured user
         journeys and producing <strong>prototypes</strong> to test and gather feedback.
         </p>
         <h3 className={styles.tag}>Side Projects</h3>
