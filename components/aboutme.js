@@ -15,13 +15,13 @@ export default function AboutMe() {
       <div className={styles.para1}>
       <h3 className={styles.tag}>Currently</h3>
         <p>
-          Currently I work in the Innovation Team at <strong>Next</strong>, where I design and
+          Currently I work in the Innovation Team at <strong><a href="https://www.next.co.uk" target="_blank">Next</a></strong>, where I design and
           prototype the future of eCommerce.
         </p>
         <h3 className={styles.tag}>Previously</h3>
         <p>
-          Previously I led the design team at <strong>The Independent</strong> &amp; <strong>London
-          Evening Standard</strong> where I built a small but mighty team of UX &amp;
+          Previously I led the design team at <strong><a href="https://www.independent.co.uk" target="_blank">The Independent</a></strong> &amp; <strong><a href="https://www.standard.co.uk" target="_blank">London
+          Evening Standard</a></strong> where I built a small but mighty team of UX &amp;
           Product Designers.
         </p>
       </div>
