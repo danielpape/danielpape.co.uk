@@ -24,7 +24,10 @@ const client = require('contentful').createClient({
 
 export const getStaticProps = async () => {
 
+
     const links = await client.getEntries()
+    console.log(process.env)
+
     return{
         props: {
             linksList: links.items
