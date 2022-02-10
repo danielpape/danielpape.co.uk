@@ -1,5 +1,5 @@
-import Menu from '../../components/menu'
-import LinkCard from '../../components/linkcard'
+import Menu from '/components/menu'
+import LinkCard from '../../components/linkcard/linkcard'
 
 import styles from "../../styles/LinksList.module.css";
 
@@ -16,10 +16,6 @@ const Links = ({ linksList }) => {
         </div>
     )
 }
-
-function removeHttp(url) {
-    return url.replace(/^https?:\/\//, '');
-  }
 
 const client = require('contentful').createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
