@@ -18,10 +18,58 @@ body {
   overflow-x: hidden;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    /* gap: 32px; */
+    padding: 32px 16px;
+    max-width: var(--max-width);
+    justify-content: space-between;
+    margin: auto;
+}
+header > * {
+    display: flex;
+    align-items: left;
+    /* gap: 32px; */
+    justify-content: flex-start;
+    margin: auto 0;
+}
+
+.wordmark {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wordmark span {
+  font-weight: 500;
+}
+
+.cta {
+  padding: 10px 14px;
+border-radius: 20px;
+background-color: #fdb825;
+-webkit-transform: scale3d(1none,1none,1none);
+transform: scale3d(1none,1none,1none);
+-webkit-transition: .2s cubic-bezier(.785, .135, .15, .86);
+transition: .2s cubic-bezier(.785, .135, .15, .86);
+color: #000;
+font-weight: 500;
+border: 0;
+}
+
+.cta:hover {
+  background-color: #e4a621;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 3px solid rgba(253,184,37,.24);
+  transition: all 0.3s;
 }
+
+a:hover {
+  border-bottom-color: #fdb825;}
 
 * {
   box-sizing: border-box;
@@ -76,6 +124,56 @@ a {
   margin: auto;
 }
 
+.intro-links {
+  display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+overflow: auto;
+-webkit-box-pack: start;
+-webkit-justify-content: flex-start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+grid-column-gap: 16px;
+grid-row-gap: 16px;
+}
+
+.intro-links > a{
+  padding: 8px 14px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  background-color: rgba(253,184,37,.24);
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: none;
+  border-radius: 32px;
+  transition: all, 0.48s;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+}
+
+.intro-links > a:hover {
+  background-color: rgba(253,184,37,.48);
+}
+
 @media (prefers-color-scheme: dark) {
   .callout {
     background: linear-gradient(101.52deg, #303e49 0%, #233645 100%);
@@ -84,7 +182,7 @@ a {
 }
 
 .gridContainer > * {
-  grid-area: span 4 / span 3;
+  grid-column: 2 / 10;
 }
 
 .gridContainer > .fullWidth {
@@ -120,16 +218,61 @@ a {
   height: 100%;
 }
 
+.introtext {
+grid-column: 2 / 9;
+font-size: 24px;
+line-height: 36px;
+}
+
+section {
+  display: flex;
+max-width: 1280px;
+margin: 2rem auto;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+grid-column-gap: 2rem;
+grid-row-gap: 2rem;
+}
+
+h2 {
+  font-size: 38px;
+font-weight: 500;
+}
+
+p a {
+  font-weight: 700;
+}
+
+p {
+  font-size: 24px;
+line-height: 36px;
+}
+
+footer > ul {
+  list-style: none;
+}
+
+footer > ul:nth-child(odd) {
+  grid-column: 1 / span 6;
+  line-height: 1.5;
+}
+
+footer > ul:nth-child(even) {
+  grid-column: 7 / span 6;
+  text-align: right;
+  line-height: 2;
+}
+
+
 @media only screen and (max-width: 1024px) {
   .gridContainer {
     grid-template-columns: repeat(12, 1fr);
 
     gap: 16px;
     padding: 32px;
-  }
-
-  .gridContainer > * {
-    grid-area: span 6 / span 4;
   }
 
   .vertical-padding {
@@ -148,10 +291,6 @@ a {
     padding: 32px;
   }
 
-  .gridContainer > * {
-    grid-area: span 6 / span 4;
-  }
-
   .vertical-padding {
     padding-top: 12vh;
     padding-bottom: 12vh;
@@ -164,6 +303,19 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+
+  main {
+    margin: 1rem;
+  }
+
+  .gridContainer > * {
+    grid-column: 1 / 12;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
   .gridContainer {
     grid-template-columns: repeat(12, 1fr);
     gap: 8px;
@@ -174,9 +326,6 @@ a {
     padding-bottom: 12vh;
   }
 
-  .gridContainer > * {
-    grid-area: span 4 / span 4;
-  }
 
   .gridContainer > .fullWidth {
     grid-area: 1 / span 12;
@@ -191,6 +340,15 @@ a {
     flex-direction: column-reverse;
     margin: 16px;
   }
+
+  footer > ul:nth-child(odd) {
+    grid-column: 1 / span 12;
+  }
+  
+  footer > ul:nth-child(even) {
+    grid-column: 1 / span 12;
+    text-align: left;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -199,4 +357,13 @@ a {
     background-color: var(--dark-bg);
     color: var(--dark-text);
   }
+}
+
+::selection {
+  background: #BBDEFB; /* WebKit/Blink Browsers */
+  color: #052a62;
+}
+::-moz-selection {
+  background: #BBDEFB;
+  color: #052a62;
 }

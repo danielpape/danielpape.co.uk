@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Menu from "../components/menu";
 import Intro from "../components/intro";
-import Splash from "../components/splash";
 import AboutMe from "../components/aboutme";
 import Footer from "../components/footer";
 import Contact from "../components/contact";
@@ -56,9 +55,7 @@ export default function Home() {
       <main>
         <Menu />
         <Intro />
-        <Splash />
         <AboutMe />
-        <Contact />
         <Footer />
       </main>
     </div>

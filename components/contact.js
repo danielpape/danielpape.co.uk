@@ -4,6 +4,12 @@ import Image from "next/image";
 import avatar from "../public/images/avatar.png"
 
 import React, { useState } from "react";
+import NextImage from "next/image";
+
+// opt-out of image optimization, no-op
+const customLoader = ({ src }) => {
+  return src
+}
 
 export default function Contact() {
   return (
@@ -17,7 +23,8 @@ export default function Contact() {
         </a>
       </div>
       <div className={styles.avatar}>
-        <Image
+        <NextImage
+        loader={customLoader}
           src={avatar}
           width="165"
           height="172"

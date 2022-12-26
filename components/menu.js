@@ -3,14 +3,14 @@ import React, { useState } from "react";
 
 export default function Menu() {
   return (
-    <div className={styles.menu}>
+    <header>
       <div className="leading VStack">
-        <h1 className={styles.wordmark}><span>Daniel Pape</span></h1>
-        <h2 className={styles.wordmark}>Product Designer</h2>
+        <h1 className="wordmark"><span>Daniel Pape</span></h1>
+        <h2 className="wordmark">Product Designer</h2>
       </div>
       <div>
-      <a href="mailto:hello@bydanielpape.com" className={styles.CTA}>Contact Me</a>
+      <a href="mailto:hello@bydanielpape.com" className="cta">Contact Me</a>
       </div>
-    </div>
+    </header>
   );
 }

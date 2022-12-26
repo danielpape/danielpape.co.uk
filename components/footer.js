@@ -3,25 +3,24 @@ import React, { useState } from "react";
 
 export default function Footer() {
   return (
-    <div className="gridContainer small-vertical-padding">
-      <div className={styles.leftColumn}>
-        <p>Designed &amp; coded by Daniel Pape </p>
-        <p>in a green part of England</p>
-      </div>
-      <div className={styles.rightColumn}>
-        <p>
+    <footer className="gridContainer two-column small-vertical-padding">
+      <ul>
+        <li>Designed &amp; coded by <strong>Daniel Pape</strong><br/>in a green part of England</li>
+      </ul>
+      <ul>
+        <li>
           Email:{" "}
           <a href="mailto:hello@bydanielpape.com">hello@bydanielpape.com</a>
-        </p>
-        <p>
+        </li>
+        <li>
           Twitter:{" "}
-          <a href="https://www.twitter.com/bydanielpape">/bydanielpape</a>
-        </p>
-        <p>
+          <a href="https://www.twitter.com/bydanielpape" target="_blank">/bydanielpape</a>
+        </li>
+        <li>
           LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/bydanielpape">/bydanielpape</a>
-        </p>
-      </div>
-    </div>
+          <a href="https://www.linkedin.com/in/bydanielpape" target="_blank">/bydanielpape</a>
+        </li>
+      </ul>
+    </footer>
   );
 }

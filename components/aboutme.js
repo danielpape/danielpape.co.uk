@@ -3,41 +3,35 @@ import React, { useState } from "react";
 
 export default function AboutMe() {
   return (
-    <div className="gridContainer vertical-padding">
-      <div className={styles.header}>
-        <h2 className={styles.largeText}>
-          I design and build{" "}
-          <span style={{ fontWeight: "bold" }}>User Experiences</span> with a
-          focus on <em>design systems</em>, <em>prototyping</em> &amp; improving{" "}
-          <em>accessibility</em>.{" "}
-        </h2>
-      </div>
-      <div className={styles.para1}>
-      <h3 className={styles.tag}>Currently</h3>
+    <section className="gridContainer small-vertical-padding">
+        <h2>About Me</h2>
         <p>
-          Currently I work in the Innovation Team at <strong><a href="https://www.next.co.uk" target="_blank">Next</a></strong>, where I design and
-          prototype the future of eCommerce.
+          I have over a decade's experience contributing to the success of
+          industry leading businesses. My current focus is on designing services
+          at&nbsp;
+          <a href="https://www.next.co.uk/" target="_blank" class="styled-link">
+            Next
+          </a>
+          , having previous experience leading the design team at{" "}
+          <a
+            href="https://www.independent.co.uk/"
+            target="_blank"
+            class="styled-link"
+          >
+            The Independent
+          </a>{" "}
+          &amp;&nbsp;
+          <a
+            href="https://www.standard.co.uk/"
+            target="_blank"
+            class="styled-link"
+          >
+            London Evening Standard
+          </a>
+          .
         </p>
-        <h3 className={styles.tag}>Previously</h3>
-        <p>
-          Previously I led the design team at <strong><a href="https://www.independent.co.uk" target="_blank">The Independent</a></strong> &amp; <strong><a href="https://www.standard.co.uk" target="_blank">London
-          Evening Standard</a></strong> where I built a small but mighty team of UX &amp;
-          Product Designers.
-        </p>
-      </div>
-
-      <div className={styles.para2}>
-      <h3 className={styles.tag}>What I do</h3>
-        <p>
-        My focus is on utilising <strong>design systems</strong> to build well structured user
-        journeys and producing <strong>prototypes</strong> to test and gather feedback.
-        </p>
-        <h3 className={styles.tag}>Side Projects</h3>
-
-        <p>
-        In my spare time I <strong>code</strong> iPhone and Android apps, a few of which have been <strong>featured</strong> in the &quot;What&apos;s Hot&quot; section on the <strong>App Store</strong> by Apple.
-        </p>
-      </div>
-    </div>
+        <p>I am a product designer who specialises in service design. User experience is at the heart of everything I produce so you'll usually find me talking and presenting to users, which inform well structured UIs based around a coherent design system.</p>
+        <p>I believe in testing over assuming, so I build prototypes with React. You can find some of my prototypes over on <a href="https://codesandbox.io/u/bydanielpape" target="_blank" class="styled-link">CodeSandbox</a>. I also code iOS &amp; Android apps as a hobby, which you can find on the <a href="https://apps.apple.com/gb/developer/daniel-pape/id633081961" target="_blank" class="styled-link">App Store</a> &amp; <a href="https://play.google.com/store/apps/details?id=com.danielpape.EMOM" target="_blank" class="styled-link">Play Store</a>. In 2013 my first app "Eve Alarm" was featured by Apple &amp; has been downloaded over 100,000 times.</p>
+    </section>
   );
 }
