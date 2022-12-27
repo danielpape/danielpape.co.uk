@@ -1,7 +1,6 @@
-import styles from "../styles/Menu.module.css";
-import React, { useState } from "react";
+import React from "react";
 
-export default function Menu() {
+export default function DPHeader() {
   return (
     <header>
       <div className="leading VStack">
