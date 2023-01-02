@@ -1,4 +1,3 @@
-import styles from "../styles/Intro.module.css";
 import React, { useState } from "react";
 
 export default function Intro() {
@@ -19,23 +18,23 @@ export default function Intro() {
           ></path>
         </svg>
         <h1>
-          <strong class="bold-text">Product Designer</strong> with a focus on
-          crafting <strong class="bold-text-2">simple</strong>,{" "}
-          <strong class="bold-text-3">accessible</strong> digital services.
+          <strong className="bold-text">Product Designer</strong> with a focus on
+          crafting <strong className="bold-text-2">simple</strong>,{" "}
+          <strong className="bold-text-3">accessible</strong> digital services.
         </h1>
         <p>
           Hello, I'm Dan. Currently I am building robust, intuitive services at
           Next. Previously I led the design team at The Independent & London
           Evening Standard.
         </p>
-        <div class="intro-links">
-          <a href="#contact" class="boxout-button button small w-button">
+        <div className="intro-links">
+          <a href="#contact" className="boxout-button button small w-button">
             👋 Say hello
           </a>
           <a
             href="https://twitter.com/bydanielpape"
             target="_blank"
-            class="boxout-button button small w-inline-block"
+            className="boxout-button button small w-inline-block"
           >
             <img
               src="https://uploads-ssl.webflow.com/5c110b4bea9a851e0b105369/62fb46f9d10e8746b5fe7d51_Twitter%20-%2012px%20icon.svg"
@@ -47,7 +46,7 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/bydanielpape"
             target="_blank"
-            class="boxout-button button small w-inline-block"
+            className="boxout-button button small w-inline-block"
           >
             <img
               src="https://uploads-ssl.webflow.com/5c110b4bea9a851e0b105369/62fb46ff4f4507daf4170f9f_Linkedin%20-%2012px%20icon.svg"
