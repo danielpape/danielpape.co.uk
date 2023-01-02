@@ -3,7 +3,7 @@ import DPHeader from "../components/DP-header";
 import Intro from "../components/intro";
 import AboutMe from "../components/aboutme";
 import Footer from "../components/footer";
-import React, { useState } from "react";
+import React from "react";
 
 export default function Home() {
 return (
