@@ -2,14 +2,15 @@ import React, { useState } from "react";
 
 export default function Intro() {
   return (
-<section>
-      <div className="gridContainer">
+    <>
+      <section className="gridContainer">
         <svg
           viewBox="0 0 64 64"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           width="96"
           height="96"
+          style={{ marginBottom: 32 }}
         >
           <circle cx="32" cy="32" r="32" fill="#FDB825"></circle>
           <path
@@ -18,45 +19,70 @@ export default function Intro() {
           ></path>
         </svg>
         <h1>
-          <strong className="bold-text">Product Designer</strong> with a focus on
-          crafting <strong className="bold-text-2">simple</strong>,{" "}
-          <strong className="bold-text-3">accessible</strong> digital services.
+          Hi, I'm <strong>Daniel Pape</strong>, a{" "}
+          <strong>Product Designer</strong> with a focus on crafting{" "}
+          <strong>simple</strong>,<strong>accessible</strong> digital services.
         </h1>
         <p>
-          Hello, I'm Dan. Currently I am building robust, intuitive services at
-          Next. Previously I led the design team at The Independent & London
-          Evening Standard.
+          My current focus is on designing services at{" "}
+          <a href="https://www.next.co.uk/" target="_blank" class="styled-link">
+            Next
+          </a>
+          , having previously led the design team at{" "}
+          <a
+            href="https://www.independent.co.uk/"
+            target="_blank"
+            class="styled-link"
+          >
+            The Independent
+          </a>{" "}
+          &{" "}
+          <a
+            href="https://www.standard.co.uk/"
+            target="_blank"
+            class="styled-link"
+          >
+            London Evening Standard
+          </a>
+          .
         </p>
-        <div className="intro-links">
-          <a href="#contact" className="boxout-button button small w-button">
-            👋 Say hello
-          </a>
+        <p>
+          User experience is at the heart of everything I produce so you'll
+          usually find me talking and presenting to users.
+        </p>
+        <p>
+          I believe in testing over assuming, so I build prototypes with React.
+          You can find some of my prototypes over on{" "}
           <a
-            href="https://twitter.com/bydanielpape"
+            href="https://codesandbox.io/u/bydanielpape"
             target="_blank"
-            className="boxout-button button small w-inline-block"
+            class="styled-link"
           >
-            <img
-              src="https://uploads-ssl.webflow.com/5c110b4bea9a851e0b105369/62fb46f9d10e8746b5fe7d51_Twitter%20-%2012px%20icon.svg"
-              loading="lazy"
-              alt=""
-            />
-            <div>Twitter</div>
+            CodeSandbox
           </a>
+          .
+        </p>
+        <p>
+          I code iOS & Android apps as a hobby, which you can find on the{" "}
           <a
-            href="https://www.linkedin.com/in/bydanielpape"
+            href="https://apps.apple.com/gb/developer/daniel-pape/id633081961"
             target="_blank"
-            className="boxout-button button small w-inline-block"
+            class="styled-link"
           >
-            <img
-              src="https://uploads-ssl.webflow.com/5c110b4bea9a851e0b105369/62fb46ff4f4507daf4170f9f_Linkedin%20-%2012px%20icon.svg"
-              loading="lazy"
-              alt=""
-            />
-            <div>LinkedIn</div>
+            App Store
+          </a>{" "}
+          &{" "}
+          <a
+            href="https://play.google.com/store/apps/details?id=com.danielpape.EMOM"
+            target="_blank"
+            class="styled-link"
+          >
+            Play Store
           </a>
-        </div>
-      </div>
-    </section>
+          . In 2013 my first app <em>Eve Alarm</em> was featured by Apple & has
+          been downloaded over 100,000 times.
+        </p>
+      </section>
+    </>
   );
 }

@@ -1,26 +1,19 @@
-import styles from "../styles/Splash.module.css";
 import NextImage from "next/image";
 import React, { useState } from "react";
 
-
-import MedoriAmbient from "../public/images/MedoriAmbient.png"
-import EMOMicon from "../public/images/EMOMicon.png"
-import ESambient from "../public/images/ESambient.png"
-import eveAppstore from "../public/images/eveAppstore.png"
-import EveOnDevice from "../public/images/EveOnDevice.png"
-import independentAmbient from "../public/images/independentAmbient.png"
-import independentIcon from "../public/images/independentIcon.png"
-import NOnDevice from "../public/images/NOnDevice.png"
-
-
+import MedoriAmbient from "../public/images/MedoriAmbient.png";
+import EMOMicon from "../public/images/EMOMicon.png";
+import ESambient from "../public/images/ESambient.png";
+import eveAppstore from "../public/images/eveAppstore.png";
+import EveOnDevice from "../public/images/EveOnDevice.png";
+import independentAmbient from "../public/images/independentAmbient.png";
+import independentIcon from "../public/images/independentIcon.png";
+import NOnDevice from "../public/images/NOnDevice.png";
 
 // opt-out of image optimization, no-op
 const customLoader = ({ src }) => {
-  return src
-}
-
-
-
+  return src;
+};
 
 export default function Splash() {
   const [isHovering1, setIsHovering1] = useState(false);
@@ -31,7 +24,6 @@ export default function Splash() {
   const [isHovering6, setIsHovering6] = useState(false);
   const [isHovering7, setIsHovering7] = useState(false);
 
-
   return (
     <div className={styles.splashContainer}>
       <div
@@ -40,7 +32,7 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering1(false)}
       >
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={NOnDevice}
           width="461"
           height="335"
@@ -92,7 +84,7 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering2(false)}
       >
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={ESambient}
           width="461"
           height="323"
@@ -118,7 +110,7 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering3(false)}
       >
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={EMOMicon}
           width="166"
           height="166"
@@ -143,13 +135,13 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering4(false)}
       >
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={EveOnDevice}
           width="264"
           height="410"
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-       alt="Eve Alarm app on an iPhone, showing the alarm time and a wheel to set the time"
+          alt="Eve Alarm app on an iPhone, showing the alarm time and a wheel to set the time"
           className={styles.splashImage}
         />
         <div
@@ -169,13 +161,13 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering6(false)}
       >
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={independentAmbient}
           width="461"
           height="323"
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-         alt="The Independent Subscriptions website on a Desktop Computer"
+          alt="The Independent Subscriptions website on a Desktop Computer"
           className={styles.splashImage}
         />
         <div
@@ -195,7 +187,7 @@ export default function Splash() {
         onMouseLeave={() => setIsHovering7(false)}
       >
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={eveAppstore}
           width="166"
           height="250"
@@ -207,13 +199,13 @@ export default function Splash() {
       </div>
       <div className={styles.item8}>
         <NextImage
-        loader={customLoader}
+          loader={customLoader}
           src={independentIcon}
           width="166"
           height="166"
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZCBteC1hdXRvIGQtYmxvY2siIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2NjY2MiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNnB4IiBmaWxsPSIjZmZmZmZmIj4xeDE8L3RleHQ+ICAgCiAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwhLS08YSBkb3dubG9hZD0iRklMRU5BTUUucG5nIiBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsYXNkYXNkLi4uIj5Eb3dubG9hZDwvYT4tLT4="
-         alt="The icon for the Independent App: A red circle with an eagle carrying a newspaper in its claws"
+          alt="The icon for the Independent App: A red circle with an eagle carrying a newspaper in its claws"
           className={styles.splashImage}
         />
       </div>

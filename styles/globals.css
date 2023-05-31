@@ -1,38 +1,46 @@
 :root {
   --primary-color: #FDB825;
-  --secondary-color: brown;
+  --secondary-color: #0346FE;
   --max-width: 1152px;
   --dark-bg: #161c21;
   --dark-text: #fff4eb;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   scroll-behavior: smooth;
   background-color: #fff4eb;
   color: #262a33;
   overflow-x: hidden;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    /* gap: 32px; */
-    padding: 32px 16px;
-    max-width: var(--max-width);
-    justify-content: space-between;
-    margin: auto;
+.blueBG{
+  background-color: var(--secondary-color);
+  color: white
 }
-header > * {
-    display: flex;
-    align-items: left;
-    /* gap: 32px; */
-    justify-content: flex-start;
-    margin: auto 0;
+
+header {
+    margin: auto;
+  }
+
+header > .wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 64px 64px 0 64px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+footer > .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .wordmark {
@@ -84,11 +92,7 @@ a:hover {
   gap: 24px;
   margin: auto;
   transition: all 0.2s;
-  max-width: 1152px;
-}
-
-.gridContainer > p:not(:nth-child(3)) {
-  margin-bottom: 32px;
+  padding: 5rem 0
 }
 
 .fullwidth {
@@ -163,11 +167,10 @@ grid-row-gap: 16px;
 }
 
 h1 {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 3.5rem;
-  line-height: 1.2;
-  letter-spacing: 0.6px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: unset;
+
 }
 
 .intro-links > a:hover {
@@ -182,7 +185,7 @@ h1 {
 }
 
 .gridContainer > * {
-  grid-column: 2 / 10;
+  grid-column: 2 / 9;
 }
 
 .gridContainer > .fullWidth {
@@ -226,8 +229,6 @@ line-height: 36px;
 
 section {
   display: flex;
-max-width: 1280px;
-margin: 2rem auto;
 -webkit-box-orient: vertical;
 -webkit-box-direction: normal;
 -webkit-flex-direction: column;
@@ -247,32 +248,45 @@ p a {
 }
 
 p {
-  font-size: 24px;
-line-height: 36px;
+  font-size: 40px;
+line-height: 56px;
 }
 
-footer > ul {
+footer {
+  margin: 64px;
+}
+
+footer > .wrapper >  ul {
   list-style: none;
 }
 
-footer > ul:nth-child(odd) {
-  grid-column: 1 / span 6;
+footer > .wrapper > ul:nth-child(odd) {
+  grid-column: 2 / span 5;
   line-height: 1.5;
 }
 
-footer > ul:nth-child(even) {
-  grid-column: 7 / span 6;
+footer > .wrapper >  ul:nth-child(even) {
+  grid-column: 7 / span 5;
   text-align: right;
   line-height: 2;
 }
 
 
 @media only screen and (max-width: 1024px) {
+  h1, p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: unset;
+  }
   .gridContainer {
     grid-template-columns: repeat(12, 1fr);
 
     gap: 16px;
     padding: 32px;
+  }
+
+  .gridContainer > * {
+    grid-column: 2 / 11;
   }
 
   .vertical-padding {
@@ -282,8 +296,16 @@ footer > ul:nth-child(even) {
   .callout {
     margin: 32px;
   }
+  header > .wrapper {
+    padding: 32px 32px 0 32px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  h1, p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: unset;
+  }
   .gridContainer {
     grid-template-columns: repeat(12, 1fr);
 
@@ -305,16 +327,17 @@ footer > ul:nth-child(even) {
 @media only screen and (max-width: 500px) {
 
   main {
-    margin: 1rem;
+    /* margin: 1rem; */
   }
 
   .gridContainer > * {
     grid-column: 1 / 12;
   }
 
-  h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+  h1, p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: unset;
   }
   .gridContainer {
     grid-template-columns: repeat(12, 1fr);
