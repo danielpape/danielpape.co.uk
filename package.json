@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^5.0.5",
     "babel-preset-es2015": "^6.24.1",
     "contentful": "^9.1.6",
     "dateformat": "^5.0.2",

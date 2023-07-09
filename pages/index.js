@@ -5,6 +5,9 @@ import AboutMe from "../components/aboutme";
 import Footer from "../components/footer";
 import React from "react";
 
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+
 export default function Home() {
   return (
     <>
