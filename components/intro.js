@@ -19,9 +19,8 @@ export default function Intro() {
           ></path>
         </svg>
         <h1>
-          Hi, I'm <strong>Daniel Pape</strong>, a{" "}
-          <strong>Product Designer</strong> with a focus on crafting{" "}
-          <strong>simple</strong>,<strong>accessible</strong> digital services.
+          <strong>Product Designer</strong> crafting <strong>simple</strong>,{" "}
+          <strong>accessible</strong> digital services.
         </h1>
         <p>
           My current focus is on designing services at{" "}

@@ -7,6 +7,8 @@ import React from "react";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
+import "@fontsource/space-mono";
+import "@fontsource/shippori-mincho";
 
 export default function Home() {
   return (

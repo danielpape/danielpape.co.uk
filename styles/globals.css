@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #FDB825;
-  --secondary-color: #0346FE;
+  --primary-color: #fdb825;
+  --secondary-color: #0346fe;
   --max-width: 1152px;
   --dark-bg: #161c21;
   --dark-text: #fff4eb;
@@ -10,21 +10,27 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
   background-color: #fff4eb;
   color: #262a33;
   overflow-x: hidden;
 }
 
-.blueBG{
+.mono {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+}
+
+.blueBG {
   background-color: var(--secondary-color);
-  color: white
+  color: white;
 }
 
 header {
-    margin: auto;
-  }
+  margin: auto;
+}
 
 header > .wrapper {
   display: flex;
@@ -44,6 +50,7 @@ footer > .wrapper {
 .wordmark {
   font-size: 16px;
   font-weight: 400;
+  line-height: 18px;
 }
 
 .wordmark span {
@@ -52,15 +59,15 @@ footer > .wrapper {
 
 .cta {
   padding: 10px 14px;
-border-radius: 20px;
-background-color: #fdb825;
--webkit-transform: scale3d(1none,1none,1none);
-transform: scale3d(1none,1none,1none);
--webkit-transition: .2s cubic-bezier(.785, .135, .15, .86);
-transition: .2s cubic-bezier(.785, .135, .15, .86);
-color: #000;
-font-weight: 500;
-border: 0;
+  border-radius: 20px;
+  background-color: #fdb825;
+  -webkit-transform: scale3d(1none, 1none, 1none);
+  transform: scale3d(1none, 1none, 1none);
+  -webkit-transition: 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  color: #000;
+  font-weight: 500;
+  border: 0;
 }
 
 .cta:hover {
@@ -70,12 +77,13 @@ border: 0;
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 3px solid rgba(253,184,37,.24);
+  border-bottom: 3px solid rgba(253, 184, 37, 0.24);
   transition: all 0.3s;
 }
 
 a:hover {
-  border-bottom-color: #fdb825;}
+  border-bottom-color: #fdb825;
+}
 
 * {
   box-sizing: border-box;
@@ -90,7 +98,7 @@ a:hover {
   gap: 24px;
   margin: auto;
   transition: all 0.2s;
-  padding: 5rem 0
+  padding: 5rem 0;
 }
 
 .fullwidth {
@@ -128,26 +136,26 @@ a:hover {
 
 .intro-links {
   display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
-overflow: auto;
--webkit-box-pack: start;
--webkit-justify-content: flex-start;
--ms-flex-pack: start;
-justify-content: flex-start;
--webkit-flex-wrap: wrap;
--ms-flex-wrap: wrap;
-flex-wrap: wrap;
--webkit-box-align: center;
--webkit-align-items: center;
--ms-flex-align: center;
-align-items: center;
-grid-column-gap: 16px;
-grid-row-gap: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
 }
 
-.intro-links > a{
+.intro-links > a {
   padding: 8px 14px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -155,7 +163,7 @@ grid-row-gap: 16px;
   justify-content: flex-start;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  background-color: rgba(253,184,37,.24);
+  background-color: rgba(253, 184, 37, 0.24);
   font-size: 16px;
   display: flex;
   flex-direction: row;
@@ -166,24 +174,24 @@ grid-row-gap: 16px;
 
 h1 {
   font-weight: 400;
-  font-size: 40px;
-  line-height: unset;
-
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -0.85px;
 }
 
 .intro-links > a:hover {
-  background-color: rgba(253,184,37,.48);
+  background-color: rgba(253, 184, 37, 0.48);
 }
 
 @media (prefers-color-scheme: dark) {
   .callout {
     background: linear-gradient(101.52deg, #303e49 0%, #233645 100%);
-    color: var(--dark-text)
+    color: var(--dark-text);
   }
 }
 
 .gridContainer > * {
-  grid-column: 2 / 9;
+  grid-column: 2 / 10;
 }
 
 .gridContainer > .fullWidth {
@@ -220,25 +228,25 @@ h1 {
 }
 
 .introtext {
-grid-column: 2 / 9;
-font-size: 24px;
-line-height: 36px;
+  grid-column: 2 / 9;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 section {
   display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
--webkit-flex-direction: column;
--ms-flex-direction: column;
-flex-direction: column;
-grid-column-gap: 2rem;
-grid-row-gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
 
 h2 {
   font-size: 38px;
-font-weight: 500;
+  font-weight: 500;
 }
 
 p a {
@@ -247,14 +255,14 @@ p a {
 
 p {
   font-size: 40px;
-line-height: 56px;
+  line-height: 56px;
 }
 
 footer {
   margin: 64px;
 }
 
-footer > .wrapper >  ul {
+footer > .wrapper > ul {
   list-style: none;
 }
 
@@ -263,15 +271,15 @@ footer > .wrapper > ul:nth-child(odd) {
   line-height: 1.5;
 }
 
-footer > .wrapper >  ul:nth-child(even) {
+footer > .wrapper > ul:nth-child(even) {
   grid-column: 7 / span 5;
   text-align: right;
   line-height: 2;
 }
 
-
 @media only screen and (max-width: 1024px) {
-  h1, p {
+  h1,
+  p {
     font-weight: 400;
     font-size: 32px;
     line-height: unset;
@@ -299,7 +307,8 @@ footer > .wrapper >  ul:nth-child(even) {
   }
 }
 @media only screen and (max-width: 768px) {
-  h1, p {
+  h1,
+  p {
     font-weight: 400;
     font-size: 32px;
     line-height: unset;
@@ -323,7 +332,6 @@ footer > .wrapper >  ul:nth-child(even) {
 }
 
 @media only screen and (max-width: 500px) {
-
   main {
     /* margin: 1rem; */
   }
@@ -332,7 +340,8 @@ footer > .wrapper >  ul:nth-child(even) {
     grid-column: 1 / 12;
   }
 
-  h1, p {
+  h1,
+  p {
     font-weight: 400;
     font-size: 26px;
     line-height: unset;
@@ -346,7 +355,6 @@ footer > .wrapper >  ul:nth-child(even) {
     padding-top: 12vh;
     padding-bottom: 12vh;
   }
-
 
   .gridContainer > .fullWidth {
     grid-area: 1 / span 12;
@@ -365,7 +373,7 @@ footer > .wrapper >  ul:nth-child(even) {
   footer > ul:nth-child(odd) {
     grid-column: 1 / span 12;
   }
-  
+
   footer > ul:nth-child(even) {
     grid-column: 1 / span 12;
     text-align: left;
@@ -381,10 +389,10 @@ footer > .wrapper >  ul:nth-child(even) {
 }
 
 ::selection {
-  background: #BBDEFB; /* WebKit/Blink Browsers */
+  background: #bbdefb; /* WebKit/Blink Browsers */
   color: #052a62;
 }
 ::-moz-selection {
-  background: #BBDEFB;
+  background: #bbdefb;
   color: #052a62;
 }
