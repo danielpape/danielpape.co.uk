@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <main className="text-xl">
+    <main className="text-xl max-w-screen-xl m-auto">
       <div className="absolute top-0 right-0 -z-10">
         <svg
           width={1280}
