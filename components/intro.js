@@ -200,17 +200,17 @@ export default function Intro() {
         <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-lg overflow-hidden p-4 flex flex-row bg-white">
           <div className="flex flex-col gap-4">
             <img
-              src="https://placehold.co/300x252"
+              src="/images/nextpay.png"
               className="rounded-md flex-1 overflow-hidden"
             />
             <img
-              src="https://placehold.co/300x252"
+              src="/images/standard.png"
               className="rounded-md overflow-hidden"
             />
           </div>
           <div className="col-start-5 col-span-8 flex gap-4 pl-4">
             <img
-              src="https://placehold.co/511x520"
+              src="/images/medori.png"
               className="rounded-md overflow-hidden"
             />
           </div>
