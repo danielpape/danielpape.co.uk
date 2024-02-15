@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 export default function Intro() {
   return (
     <main className="text-xl">

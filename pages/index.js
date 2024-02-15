@@ -56,11 +56,9 @@ export default function Home() {
           }}
         />
       </Head>
-      <DPHeader />
       <main>
         <Intro />
       </main>
-      <Footer />
     </>
   );
 }
