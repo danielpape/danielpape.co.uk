@@ -197,7 +197,7 @@ export default function Intro() {
         </h2>
       </div>
       <div className="grid grid-cols-12 py-16">
-        <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-lg overflow-hidden p-4 flex flex-col md:flex-row bg-white gap-4">
+        <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-xl overflow-hidden p-3 flex flex-col md:flex-row bg-white gap-4">
           <div className="flex flex-col gap-4">
             <img
               src="/images/nextpay.png"
@@ -210,7 +210,7 @@ export default function Intro() {
               alt="A person's hands holding a phone displaying the Evening Standard mobile website"
             />
           </div>
-          <div className="col-start-5 col-span-5 flex gap-4 md:pl-4">
+          <div className="col-start-5 col-span-5 flex gap-4">
             <img
               src="/images/medori.png"
               className="rounded-md overflow-hidden"
