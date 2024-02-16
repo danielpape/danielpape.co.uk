@@ -1,8 +1,0 @@
-.linkscontainer {
-        display: grid;
-        grid-gap: 32px;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        padding: 0 3.2rem 1.6rem 3.2rem;
-        max-width: 1400px;
-        margin: auto;
-}

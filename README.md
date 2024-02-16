@@ -1,12 +1,18 @@
-# Daniel Pape's  Website 2022
+# Daniel Pape's  Website 2024
 
 Hello, my name is Daniel Pape. I'm a UX Designer from the UK and this is the source code to my website.
 
 I used the following things to build this site:
 
-- React library
-- NextJS static site framework
-- Github Pages hosting
-- Figma design tool
-- VSCode text editor
-- MacBook Pro laptop
+## Tech
+- React 
+- NextJS
+- Tailwind CSS
+- Github Pages
+
+## Design & Code
+- Figma
+- Codesandbox running in Chrome
+
+## Hardware
+- MacBook Pro

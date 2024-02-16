@@ -1,8 +1,5 @@
 import Head from "next/head";
-import DPHeader from "../components/DP-header";
 import Intro from "../components/intro";
-import AboutMe from "../components/aboutme";
-import Footer from "../components/footer";
 import React from "react";
 
 import "@fontsource/dm-sans/400.css";
