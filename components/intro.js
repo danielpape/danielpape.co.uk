@@ -197,21 +197,24 @@ export default function Intro() {
         </h2>
       </div>
       <div className="grid grid-cols-12 py-16">
-        <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-lg overflow-hidden p-4 flex flex-row bg-white">
+        <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-lg overflow-hidden p-4 flex flex-col md:flex-row bg-white gap-4">
           <div className="flex flex-col gap-4">
             <img
               src="/images/nextpay.png"
-              className="rounded-md flex-1 overflow-hidden"
+              className="rounded-md overflow-hidden"
+              alt="A person's hands holding a phone displaying the Next Pay credit overlay"
             />
             <img
               src="/images/standard.png"
               className="rounded-md overflow-hidden"
+              alt="A person's hands holding a phone displaying the Evening Standard mobile website"
             />
           </div>
-          <div className="col-start-5 col-span-8 flex gap-4 pl-4">
+          <div className="col-start-5 col-span-5 flex gap-4 md:pl-4">
             <img
               src="/images/medori.png"
               className="rounded-md overflow-hidden"
+              alt="A person's hands holding a phone displaying the Medori app which lists medications and which have been taken"
             />
           </div>
         </div>
