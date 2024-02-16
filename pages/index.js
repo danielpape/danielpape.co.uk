@@ -4,6 +4,7 @@ import React from "react";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
+import Highlights from "../components/highlights";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
       </Head>
       <main>
         <Intro />
+        <Highlights />
       </main>
     </>
   );

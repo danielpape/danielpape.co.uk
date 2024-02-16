@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <main className="text-xl max-w-screen-xl m-auto">
+    <section className="text-xl max-w-screen-xl m-auto border-b border-slate-200">
       <div className="absolute top-0 right-0 -z-10">
         <svg
           width={1280}
@@ -397,6 +397,6 @@ export default function Intro() {
           </defs>
         </svg>
       </div>
-    </main>
+    </section>
   );
 }
