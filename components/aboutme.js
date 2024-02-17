@@ -1,12 +1,12 @@
 export default function AboutMe(props) {
   return (
-    <div className="grid grid-cols-12 py-16 my-16 px-8 max-w-screen-xl m-auto border-b border-slate-200">
+    <div className="grid grid-cols-12 py-16 my-16 px-8 m-auto border-b border-slate-200">
       <div className="md:col-start-2 md:col-span-5 col-start-1 col-span-12">
         <h2 className="text-5xl font-serif text-slate-800 pb-16">About Me</h2>
       </div>
       <div className="md:col-start-7 md:col-span-5 col-start-1 col-span-12 flex flex-col gap-8">
-        <div className="flex flex-col gap-8 text-xl text-slate-800">
-          <p>
+        <div className="flex flex-col gap-8 2xl:text-3xl text-xl text-slate-800">
+          <p className="leading-relaxed">
             My current focus is on designing services at 
             <a
               href="https://www.next.co.uk"
@@ -33,7 +33,7 @@ export default function AboutMe(props) {
             </a>
             .
           </p>
-          <p>
+          <p className="leading-relaxed">
             I believe in testing over assuming, so I build prototypes with
             React. You can find some of my prototypes over on{" "}
             <a
@@ -45,7 +45,7 @@ export default function AboutMe(props) {
             </a>
             .
           </p>
-          <p>
+          <p className="leading-relaxed">
             I code iOS & Android apps as a hobby, which you can find on the App
             Store & Play Store. In 2013 my first app Eve Alarm was featured by
             Apple & has been downloaded over 100,000 times.
