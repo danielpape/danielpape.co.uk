@@ -1,7 +1,7 @@
 export default function Header(props) {
   return (
     <header className="grid grid-cols-12 py-8 lg:my-16 my-8 px-8 text-l m-auto">
-      <div className="lg:col-start-2 lg:col-span-5 md:col-start-2 md:col-span-5 col-start-1 col-span-12 flex flex-col">
+      <div className="lg:col-start-2 lg:col-span-5 md:col-start-2 md:col-span-5 col-start-1 col-span-5 flex flex-col">
         <svg
           width={35}
           height={38}
