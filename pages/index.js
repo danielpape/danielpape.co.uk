@@ -1,11 +1,13 @@
-import Head from "next/head";
-import Intro from "../components/intro";
 import React from "react";
+import Head from "next/head";
+
+import Header from "../components/header";
+import Intro from "../components/intro";
+import Highlights from "../components/highlights";
+import AboutMe from "../components/aboutme";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
-import Highlights from "../components/highlights";
-import AboutMe from "../components/aboutme";
 
 export default function Home() {
   return (
@@ -54,6 +56,7 @@ export default function Home() {
         />
       </Head>
       <main>
+        <Header />
         <Intro />
         <Highlights />
         <AboutMe />
