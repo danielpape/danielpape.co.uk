@@ -10,7 +10,7 @@ export default function AboutMe(props) {
             My current focus is on designing services at 
             <a
               href="https://www.next.co.uk"
-              className="text-indigo-600 hover:text-indigo-900"
+              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               Next
@@ -18,7 +18,7 @@ export default function AboutMe(props) {
             , having previously led the design team at 
             <a
               href="https://www.independent.co.uk"
-              className="text-indigo-600 hover:text-indigo-900"
+              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               The Independent
@@ -26,7 +26,7 @@ export default function AboutMe(props) {
              &{" "}
             <a
               href="https://www.standard.co.uk"
-              className="text-indigo-600 hover:text-indigo-900"
+              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               London Evening Standard
@@ -38,7 +38,7 @@ export default function AboutMe(props) {
             React. You can find some of my prototypes over on{" "}
             <a
               href="https://codesandbox.io/u/bydanielpape"
-              className="text-indigo-600 hover:text-indigo-900"
+              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               CodeSandbox
