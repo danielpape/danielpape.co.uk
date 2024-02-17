@@ -150,8 +150,8 @@ export default function Intro() {
         </svg>
       </div>
       <div className="grid grid-cols-12 mt-16 px-8">
-        <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-4 flex flex-col gap-3">
-          <h1 className="text-gray-700">
+        <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-4 flex flex-col gap-4">
+          <h1 className="text-gray-700 mb-4">
             <span className="font-semibold text-gray-900">Daniel Pape</span> is
             a Product Designer crafting simple, accessible digital services.
           </h1>
