@@ -1,7 +1,7 @@
 export default function Intro() {
   return (
-    <section className="2xl:text-3xl text-xl m-auto border-b border-slate-200">
-      <div className="absolute top-0 right-0 -z-10">
+    <section className="2xl:text-3xl text-xl m-auto border-b border-slate-200 dark:border-slate-600">
+      <div className="absolute top-0 right-0 z-10">
         <svg
           width={1280}
           height={895}
@@ -149,19 +149,21 @@ export default function Intro() {
           </defs>
         </svg>
       </div>
-      <div className="grid grid-cols-12 mt-16 px-8">
+      <div className="grid grid-cols-12 mt-16 px-8 z-20">
         <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-4 flex flex-col gap-4">
-          <h1 className="text-gray-700 mb-4">
-            <span className="font-semibold text-gray-900">Daniel Pape</span> is
-            a Product Designer crafting simple, accessible digital services.
+          <h1 className="dark:text-slate-300 text-gray-700 mb-4">
+            <span className="font-semibold dark:text-slate-100 text-gray-900">
+              Daniel Pape
+            </span>{" "}
+            is a Product Designer crafting simple, accessible digital services.
           </h1>
         </div>
-        <h2 className="col-start-1 col-span-12 md:col-start-7 md:col-span-5 text-gray-700">
+        <h2 className="col-start-1 col-span-12 md:col-start-7 md:col-span-5 dark:text-slate-300 text-gray-700">
           My mission is to keep user experience at the heart at everything I
           produce, so you’ll usually find me talking and presenting to users.
         </h2>
       </div>
-      <div className="grid grid-cols-12 py-16">
+      <div className="grid grid-cols-12 py-16 z-20">
         <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-xl overflow-hidden p-3 flex flex-col md:flex-row bg-white gap-4">
           <div className="flex flex-col gap-4">
             <img
@@ -184,12 +186,12 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      <div className="flex align-middle justify-center px-12 pb-8">
-        <p className="text-gray-700 text-center">
+      <div className="flex align-middle justify-center px-12 pb-8 z-20">
+        <p className="dark:text-slate-300 text-gray-700 text-center">
           Helping market leading brands deliver best online services
         </p>
       </div>
-      <div className="flex flex-wrap align-middle justify-center px-12 pb-16 gap-12">
+      <div className="flex flex-wrap align-middle justify-center px-12 pb-16 gap-12 z-20">
         <svg
           width={117}
           height={29}
@@ -207,7 +209,10 @@ export default function Intro() {
               width={117}
               height={29}
             >
-              <path d="M116.3 0H0V28.0241H116.3V0Z" fill="white" />
+              <path
+                d="M116.3 0H0V28.0241H116.3V0Z"
+                className="dark:fill-slate-200 fill-slate-800"
+              />
             </mask>
             <g mask="url(#mask0_1341_151)">
               <path

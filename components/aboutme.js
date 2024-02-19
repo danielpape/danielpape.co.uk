@@ -1,16 +1,18 @@
 export default function AboutMe(props) {
   return (
-    <div className="grid grid-cols-12 py-16 my-16 px-8 m-auto border-b border-slate-200">
+    <div className="grid grid-cols-12 py-16  px-8 m-auto border-b border-slate-200 dark:border-slate-600">
       <div className="md:col-start-2 md:col-span-5 col-start-1 col-span-12">
-        <h2 className="text-5xl font-serif text-slate-800 pb-16">About Me</h2>
+        <h2 className="text-5xl font-serif dark:text-slate-200 text-slate-800 pb-16">
+          About Me
+        </h2>
       </div>
       <div className="md:col-start-7 md:col-span-5 col-start-1 col-span-12 flex flex-col gap-8">
-        <div className="flex flex-col gap-8 2xl:text-3xl text-xl text-slate-800">
+        <div className="flex flex-col gap-8 2xl:text-3xl text-xl dark:text-slate-300 text-slate-800">
           <p className="leading-relaxed">
             My current focus is on designing services at 
             <a
               href="https://www.next.co.uk"
-              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               Next
@@ -18,7 +20,7 @@ export default function AboutMe(props) {
             , having previously led the design team at 
             <a
               href="https://www.independent.co.uk"
-              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               The Independent
@@ -26,7 +28,7 @@ export default function AboutMe(props) {
              &{" "}
             <a
               href="https://www.standard.co.uk"
-              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               London Evening Standard
@@ -38,7 +40,7 @@ export default function AboutMe(props) {
             React. You can find some of my prototypes over on{" "}
             <a
               href="https://codesandbox.io/u/bydanielpape"
-              className="text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
               target="_blank"
             >
               CodeSandbox
