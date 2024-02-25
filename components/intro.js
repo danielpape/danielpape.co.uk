@@ -149,7 +149,7 @@ export default function Intro() {
           </defs>
         </svg>
       </div>
-      <div className="grid grid-cols-12 mt-16 px-8 z-20">
+      <div className="grid grid-cols-12 mt-16 px-8 z-20 relative">
         <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-4 flex flex-col gap-4">
           <h1 className="dark:text-gray-300 text-gray-700 mb-4">
             <span className="font-semibold dark:text-gray-100 text-gray-900">
@@ -163,7 +163,7 @@ export default function Intro() {
           produce, so you’ll usually find me talking and presenting to users.
         </h2>
       </div>
-      <div className="grid grid-cols-12 py-16 z-20">
+      <div className="grid grid-cols-12 py-16 z-30 relative">
         <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-xl overflow-hidden p-3 flex flex-col md:flex-row bg-white gap-4">
           <div className="flex flex-col gap-4">
             <img
