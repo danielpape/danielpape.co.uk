@@ -163,7 +163,7 @@ export default function Intro() {
           produce, so you’ll usually find me talking and presenting to users.
         </h2>
       </div>
-      <div className="grid grid-cols-12 py-16 z-30 relative">
+      <div className="grid grid-cols-12 pt-16 pb-32 z-30 relative">
         <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-xl overflow-hidden p-3 flex flex-col md:flex-row bg-white gap-4">
           <div className="flex flex-col gap-4">
             <img
@@ -191,7 +191,7 @@ export default function Intro() {
           Helping market leading brands deliver best online services
         </p>
       </div>
-      <div className="flex flex-wrap align-middle justify-center px-12 pb-16 gap-12 z-20">
+      <div className="flex flex-wrap align-middle justify-center px-12 pb-32 gap-12 z-20">
         <svg
           width={117}
           height={29}
