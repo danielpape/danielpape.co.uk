@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/caudex": "^5.0.18",
     "@fontsource/dm-mono": "^5.0.17",
     "@fontsource/dm-sans": "^5.0.5",
     "babel-preset-es2015": "^6.24.1",

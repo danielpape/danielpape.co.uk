@@ -8,6 +8,7 @@ import AboutMe from "../components/aboutme";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
+import "@fontsource/caudex";
 
 export default function Home() {
   return (
