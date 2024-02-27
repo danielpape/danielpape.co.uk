@@ -155,7 +155,8 @@ export default function Intro() {
             <span className="font-semibold dark:text-gray-100 text-gray-900">
               Daniel Pape
             </span>{" "}
-            is a Product Designer crafting simple, accessible digital services.
+            is a <i className="text-gray-900">Product Designer</i> crafting{" "}
+            <i>simple</i>, <i>accessible</i> digital services.
           </h1>
         </div>
         <h2 className="col-start-1 col-span-12 md:col-start-7 md:col-span-5 dark:text-gray-300 text-gray-700">
