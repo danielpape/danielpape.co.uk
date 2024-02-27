@@ -151,7 +151,7 @@ export default function Intro() {
       </div>
       <div className="grid grid-cols-12 xl:py-16 mt-16 px-8 z-20 relative">
         <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-8 flex flex-col gap-4">
-          <h1 className="dark:text-gray-300 text-gray-600 md:text-5xl md:mb-16 mb-4 font-serif text-3xl">
+          <h1 className="dark:text-gray-300 text-gray-600 md:text-5xl md:leading-[4rem] md:mb-16 mb-4 font-serif text-3xl">
             <span className="font-semibold dark:text-gray-100 text-gray-900">
               Daniel Pape
             </span>{" "}
