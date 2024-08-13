@@ -149,14 +149,16 @@ export default function Intro() {
           </defs>
         </svg>
       </div>
-      <div className="grid grid-cols-12 xl:py-16 mt-16 px-8 z-20 relative">
-        <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-8 flex flex-col gap-4">
-          <h1 className="dark:text-gray-300 text-gray-600 md:text-5xl md:leading-[4rem] md:mb-16 mb-4 font-serif text-3xl">
+
+      <div className="grid grid-cols-12 py-2 mt-16 px-8 z-20 relative">
+        <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-5 flex flex-col gap-4">
+          <h1 className="dark:text-gray-300 text-gray-600 md:mb-16 mb-4 text-md">
             <span className="font-semibold dark:text-gray-100 text-gray-900">
               Daniel Pape
             </span>{" "}
             is a{" "}
             <i className="dark:text-gray-100 text-gray-900">Product Designer</i>{" "}
+            <br />
             crafting <i>simple</i>, <i>accessible</i> digital services.
           </h1>
         </div>
@@ -165,7 +167,7 @@ export default function Intro() {
           produce, so you’ll usually find me talking and presenting to users.
         </h2>
       </div>
-      <div className="grid grid-cols-12 pt-16 pb-32 z-30 relative">
+      <div className="grid grid-cols-12 pt-8 pb-32 z-30 relative">
         <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 shadow-lg rounded-xl overflow-hidden p-3 flex flex-col md:flex-row bg-white gap-4">
           <div className="flex flex-col gap-4">
             <img
