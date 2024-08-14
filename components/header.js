@@ -1,7 +1,7 @@
 export default function Header(props) {
   return (
     <header className="grid grid-cols-12 pt-8 sm:py-8 lg:mb-16 px-8 text-l m-auto z-30 relative">
-      <div className="lg:col-start-2 lg:col-span-5 md:col-start-2 md:col-span-5 col-start-1 col-span-5 flex flex-col">
+      <div className="lg:col-start-2 lg:col-span-5 md:col-start-2 md:col-span-5 col-start-1 col-span-5 flex flex-col justify-center md:justify-end">
         <svg
           width={35}
           height={38}
@@ -37,14 +37,14 @@ export default function Header(props) {
             </clipPath>
           </defs>
         </svg>
-        <h1 className="font-bold dark:text-slate-100 text-slate-800 leading-tight">
+        {/* <h1 className="font-bold dark:text-slate-100 text-slate-800 leading-tight">
           Daniel Pape
         </h1>
         <h2 className="dark:text-slate-400 text-slate-500 leading-tight">
           Product Designer
-        </h2>
+        </h2> */}
       </div>
-      <div className="col-start-7 col-span-5 justify-end lg:col-start-10 lg:col-span-3 md:col-start-9 md:col-span-4 flex flex-row sm:flex-col gap-8 sm:gap-1 leading-tight mt-11">
+      <div className="col-start-7 col-span-5 justify-end lg:col-start-10 lg:col-span-3 md:col-start-9 md:col-span-4 flex flex-row sm:flex-col gap-8 sm:gap-1 leading-tight">
         <div className="flex">
           <a
             href="mailto:danielwpape@gmail.com"
