@@ -47,7 +47,7 @@ export default function Header(props) {
       <div className="col-start-7 col-span-5 justify-end lg:col-start-10 lg:col-span-3 md:col-start-9 md:col-span-4 flex flex-row sm:flex-col gap-8 sm:gap-1 leading-tight">
         <div className="flex">
           <a
-            href="mailto:danielwpape@gmail.com"
+            href="mailto:hello@bydanielpape.com"
             className="underline decoration-purple-400 flex items-center gap-2"
           >
             <svg
@@ -63,9 +63,9 @@ export default function Header(props) {
               ></path>
             </svg>
             <span className="sm:block hidden dark:text-gray-100 text-gray-800">
-              danielwpape
+              hello
               <span className="dark:text-gray-400 text-gray-500">
-                @gmail.com
+                @bydanielpape.com
               </span>
             </span>
           </a>
