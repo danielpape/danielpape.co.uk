@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <section className="2xl:text-3xl text-xl m-auto border-b border-gray-200 dark:border-gray-600">
+    <section className="text-xl m-auto border-b border-gray-200 dark:border-gray-600  max-w-screen-xl">
       <div className="absolute top-0 right-0 z-10">
         <svg
           width={1280}
@@ -159,7 +159,9 @@ export default function Intro() {
             is a{" "}
             <i className="dark:text-gray-100 text-gray-900">Product Designer</i>{" "}
             <br />
-            crafting <i>simple</i>, <i>accessible</i> digital services.
+            crafting <i>
+              simple
+            </i>, <i>accessible</i> digital services.
           </h1>
         </div>
         <h2 className="col-start-1 col-span-12 md:col-start-7 md:col-span-5 dark:text-gray-300 text-gray-700">

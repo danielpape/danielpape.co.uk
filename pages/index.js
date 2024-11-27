@@ -59,7 +59,6 @@ export default function Home() {
       <main className="bg-white dark:bg-slate-800">
         <Header />
         <Intro />
-        <Highlights />
         <AboutMe />
       </main>
     </>

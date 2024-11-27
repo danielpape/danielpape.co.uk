@@ -1,13 +1,13 @@
 export default function AboutMe(props) {
   return (
-    <div className="grid grid-cols-12 py-16  px-8 m-auto border-b border-slate-200 dark:border-slate-600">
-      <div className="md:col-start-2 md:col-span-5 col-start-1 col-span-12">
-        <h2 className="text-5xl font-serif dark:text-slate-200 text-slate-800 pb-16">
+    <div className="grid grid-cols-12 py-16  px-8 m-auto border-b border-slate-200 dark:border-slate-600  max-w-screen-xl">
+      <div className="md:col-start-2 md:col-span-4 col-start-1 col-span-12">
+        <h2 className="text-2xl dark:text-slate-200 text-slate-800 pb-16">
           About Me
         </h2>
       </div>
-      <div className="md:col-start-7 md:col-span-5 col-start-1 col-span-12 flex flex-col gap-8">
-        <div className="flex flex-col gap-8 2xl:text-3xl text-xl dark:text-slate-300 text-slate-800">
+      <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8">
+        <div className="flex flex-col gap-8 text-xl dark:text-slate-300 text-slate-800">
           <p className="leading-relaxed">
             My current focus is on designing services at 
             <a
