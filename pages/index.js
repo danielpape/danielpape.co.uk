@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Intro from "../components/intro";
 import Highlights from "../components/highlights";
 import AboutMe from "../components/aboutme";
+import Experience from "../components/experience";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
@@ -60,6 +61,7 @@ export default function Home() {
         <Header />
         <Intro />
         <AboutMe />
+        <Experience />
       </main>
     </>
   );
