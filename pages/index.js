@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Header from "../components/header";
 import Intro from "../components/intro";
-import Highlights from "../components/highlights";
+import Courses from "../components/courses";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
 
@@ -62,6 +62,7 @@ export default function Home() {
         <Intro />
         <AboutMe />
         <Experience />
+        <Courses />
       </main>
     </>
   );
