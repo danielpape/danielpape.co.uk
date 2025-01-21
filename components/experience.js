@@ -7,84 +7,86 @@ export default function Experience(props) {
         </h2>
       </div>
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-16">
-        <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
-          <div class="font-medium dark:text-slate-300 text-slate-700">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div className="font-medium dark:text-slate-300 text-slate-700">
             2018 - Present
           </div>
-          <div class="col-span-2 flex justify-between">
+          <div className="col-span-2 flex justify-between">
             <div>
-              <div class="font-bold dark:text-slate-200 text-slate-800">
+              <div className="font-bold dark:text-slate-200 text-slate-800">
                 Next
               </div>
-              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
                 2024 - Lead UX Designer
               </div>
-              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
                 2022 - Senior UX Designer
               </div>
-              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
                 2018 - UX Designer
               </div>
             </div>
-            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
+            <div className="font-mono text-sm text-right dark:text-slate-300 text-slate-700 hidden lg:block">
               Hybrid - Leicester
             </div>
           </div>
         </div>
       </div>
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-16">
-        <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
-          <div class="font-medium dark:text-slate-300 text-slate-700">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div className="font-medium dark:text-slate-300 text-slate-700">
             2014 - 2018
           </div>
-          <div class="col-span-2 flex justify-between">
+          <div className="col-span-2 flex justify-between">
             <div>
-              <div class="font-bold dark:text-slate-200 text-slate-800">
+              <div className="font-bold dark:text-slate-200 text-slate-800">
                 The Independent & London Evening Standard
               </div>
-              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
                 UX Designer
               </div>
             </div>
-            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
+            <div className="font-mono text-sm text-right dark:text-slate-300 text-slate-700 hidden lg:block">
               London
             </div>
           </div>
         </div>
       </div>
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-16">
-        <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
-          <div class="font-medium dark:text-slate-300 text-slate-700">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div className="font-medium dark:text-slate-300 text-slate-700">
             2012 - 2014
           </div>
-          <div class="col-span-2 flex justify-between">
+          <div className="col-span-2 flex justify-between">
             <div>
-              <div class="font-bold dark:text-slate-200 text-slate-800">
+              <div className="font-bold dark:text-slate-200 text-slate-800">
                 PhotoBox
               </div>
-              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
                 Product Manager
               </div>
             </div>
-            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
+            <div className="font-mono text-sm text-right dark:text-slate-300 text-slate-700 hidden lg:block">
               London
             </div>
           </div>
         </div>
       </div>
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-16">
-        <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
-          <div class="font-medium dark:text-slate-300 text-slate-700">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div className="font-medium dark:text-slate-300 text-slate-700">
             2011 - 2012
           </div>
-          <div class="col-span-2 flex justify-between">
+          <div className="col-span-2 flex justify-between">
             <div>
-              <div class="dark:text-slate-400 text-slate-600">Skive</div>
-              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+              <div className="font-bold dark:text-slate-400 text-slate-600">
+                Skive
+              </div>
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
                 Advertising Creative
               </div>
             </div>
-            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
+            <div className="font-mono text-sm text-right dark:text-slate-300 text-slate-700 hidden lg:block">
               London
             </div>
           </div>
