@@ -36,9 +36,7 @@ export default function Experience(props) {
               <div class="font-bold dark:text-slate-200 text-slate-800">
                 The Independent & London Evening Standard
               </div>
-              <div class="dark:text-slate-400 text-slate-600">
-                Product Designer
-              </div>
+              <div class="dark:text-slate-400 text-slate-600">UX Designer</div>
             </div>
             <div class="text-right dark:text-slate-300 text-slate-700">
               London
@@ -49,15 +47,15 @@ export default function Experience(props) {
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-16">
         <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
           <div class="font-medium dark:text-slate-300 text-slate-700">
-            2014 - 2018
+            2012 - 2014
           </div>
           <div class="col-span-2 flex justify-between">
             <div>
               <div class="font-bold dark:text-slate-200 text-slate-800">
-                The Independent & London Evening Standard
+                PhotoBox
               </div>
               <div class="dark:text-slate-400 text-slate-600">
-                Product Designer
+                Product Manager
               </div>
             </div>
             <div class="text-right dark:text-slate-300 text-slate-700">
@@ -69,15 +67,13 @@ export default function Experience(props) {
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-16">
         <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
           <div class="font-medium dark:text-slate-300 text-slate-700">
-            2014 - 2018
+            2011 - 2012
           </div>
           <div class="col-span-2 flex justify-between">
             <div>
+              <div class="dark:text-slate-400 text-slate-600">Skive</div>
               <div class="dark:text-slate-400 text-slate-600">
-                The Independent & London Evening Standard
-              </div>
-              <div class="dark:text-slate-400 text-slate-600">
-                Product Designer
+                Advertising Creative
               </div>
             </div>
             <div class="text-right dark:text-slate-300 text-slate-700">
