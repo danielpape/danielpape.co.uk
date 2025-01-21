@@ -16,11 +16,17 @@ export default function Experience(props) {
               <div class="font-bold dark:text-slate-200 text-slate-800">
                 Next
               </div>
-              <div class="dark:text-slate-400 text-slate-600">
-                Lead UX Designer
+              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+                2024 - Lead UX Designer
+              </div>
+              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+                2022 - Senior UX Designer
+              </div>
+              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+                2018 - UX Designer
               </div>
             </div>
-            <div class="text-right dark:text-slate-300 text-slate-700">
+            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
               Hybrid - Leicester
             </div>
           </div>
@@ -36,9 +42,11 @@ export default function Experience(props) {
               <div class="font-bold dark:text-slate-200 text-slate-800">
                 The Independent & London Evening Standard
               </div>
-              <div class="dark:text-slate-400 text-slate-600">UX Designer</div>
+              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
+                UX Designer
+              </div>
             </div>
-            <div class="text-right dark:text-slate-300 text-slate-700">
+            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
               London
             </div>
           </div>
@@ -54,11 +62,11 @@ export default function Experience(props) {
               <div class="font-bold dark:text-slate-200 text-slate-800">
                 PhotoBox
               </div>
-              <div class="dark:text-slate-400 text-slate-600">
+              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
                 Product Manager
               </div>
             </div>
-            <div class="text-right dark:text-slate-300 text-slate-700">
+            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
               London
             </div>
           </div>
@@ -72,11 +80,11 @@ export default function Experience(props) {
           <div class="col-span-2 flex justify-between">
             <div>
               <div class="dark:text-slate-400 text-slate-600">Skive</div>
-              <div class="dark:text-slate-400 text-slate-600">
+              <div class="font-mono text-sm dark:text-slate-400 text-slate-600">
                 Advertising Creative
               </div>
             </div>
-            <div class="text-right dark:text-slate-300 text-slate-700">
+            <div class="font-mono text-sm text-right dark:text-slate-300 text-slate-700">
               London
             </div>
           </div>
