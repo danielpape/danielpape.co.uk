@@ -13,7 +13,7 @@ export default function Experience(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-200 text-slate-800 mb-2">
+              <div className="text-lg font-medium dark:text-slate-200 text-slate-800 mb-2">
                 Next
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
@@ -39,7 +39,7 @@ export default function Experience(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-200 text-slate-800 mb-2">
+              <div className="text-lg font-medium dark:text-slate-200 text-slate-800 mb-2">
                 The Independent & London Evening Standard
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
@@ -79,7 +79,7 @@ export default function Experience(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-400 text-slate-600 mb-2">
+              <div className="text-lg font-medium dark:text-slate-400 text-slate-600 mb-2">
                 Skive
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">

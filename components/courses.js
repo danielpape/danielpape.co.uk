@@ -13,7 +13,7 @@ export default function Courses(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-200 text-slate-800 mb-2">
+              <div className="text-lg font-medium dark:text-slate-200 text-slate-800 mb-2">
                 IDEO U
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
@@ -30,7 +30,7 @@ export default function Courses(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-200 text-slate-800 mb-2">
+              <div className="text-lg font-medium dark:text-slate-200 text-slate-800 mb-2">
                 Adam Silver
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
@@ -64,7 +64,7 @@ export default function Courses(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-400 text-slate-600 mb-2">
+              <div className="text-lg font-medium dark:text-slate-400 text-slate-600 mb-2">
                 Memorisely
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
@@ -81,7 +81,7 @@ export default function Courses(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-400 text-slate-600 mb-2">
+              <div className="text-lg font-medium dark:text-slate-400 text-slate-600 mb-2">
                 Scrimba
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
@@ -98,7 +98,7 @@ export default function Courses(props) {
           </div>
           <div className="col-span-2 flex justify-between">
             <div>
-              <div className="font-bold dark:text-slate-400 text-slate-600 mb-2">
+              <div className="text-lg font-medium dark:text-slate-400 text-slate-600 mb-2">
                 General Assembly
               </div>
               <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
