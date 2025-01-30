@@ -59,6 +59,23 @@ export default function Courses(props) {
       </div>
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-8">
         <div className="border-b pb-8 grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div className="text-sm font-mono dark:text-slate-300 text-slate-700">
+            2022
+          </div>
+          <div className="col-span-2 flex justify-between">
+            <div>
+              <div className="text-lg font-medium dark:text-slate-200 text-slate-800 mb-2">
+                IDEO U
+              </div>
+              <div className="font-mono text-sm dark:text-slate-400 text-slate-600">
+                Human-Centred Service Design
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8 pb-8">
+        <div className="border-b pb-8 grid grid-cols-1 gap-2 md:grid-cols-3">
           <div className="font-mono text-sm font-medium dark:text-slate-300 text-slate-700">
             2021
           </div>
