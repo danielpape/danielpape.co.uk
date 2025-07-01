@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Header from "../components/header";
 import Intro from "../components/intro";
+import Grid from "../components/grid";
 import Courses from "../components/courses";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
@@ -60,6 +61,7 @@ export default function Home() {
       <main className="bg-white dark:bg-slate-800">
         <Header />
         <Intro />
+        <Grid />
         <AboutMe />
         <Experience />
         <Courses />
