@@ -4,13 +4,11 @@ import Head from "next/head";
 import Header from "../components/header";
 import Intro from "../components/intro";
 import Grid from "../components/grid";
-import Courses from "../components/courses";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
-import "@fontsource/caudex";
 
 export default function Home() {
   return (
@@ -64,7 +62,6 @@ export default function Home() {
         <Grid />
         <AboutMe />
         <Experience />
-        <Courses />
       </main>
     </>
   );
