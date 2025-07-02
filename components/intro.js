@@ -1,4 +1,4 @@
-import BackgroundGradient from "../components/decoration/BackgroundGradient";
+import BackgroundGradient from "./decoration/BackgroundGradient";
 
 export default function Intro() {
   return (

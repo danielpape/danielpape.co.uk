@@ -1,4 +1,4 @@
-import DPLogo from "../components/decoration/logos/DPLogo";
+import DPLogo from "./decoration/logos/DPLogo";
 
 export default function Header(props) {
   return (
