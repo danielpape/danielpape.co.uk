@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 
-import Header from "../components/header";
-import Intro from "../components/intro";
-import Grid from "../components/grid";
-import AboutMe from "../components/aboutme";
-import Experience from "../components/experience";
+import Header from "../sections/header";
+import Intro from "../sections/intro";
+import Grid from "../sections/grid";
+import AboutMe from "../sections/aboutme";
+import Experience from "../sections/experience";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
