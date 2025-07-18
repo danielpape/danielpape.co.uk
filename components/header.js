@@ -1,6 +1,8 @@
 import DPLogo from "./decoration/logos/DPLogo";
 
 export default function Header(props) {
+  
+
   return (
     <header className="grid grid-cols-12 pt-8 sm:py-8 lg:mb-16 px-8 text-l m-auto z-30 relative max-w-screen-lg">
       <div className="lg:col-start-2 lg:col-span-5 md:col-start-2 md:col-span-5 col-start-1 col-span-5 flex flex-col justify-center md:justify-end">
