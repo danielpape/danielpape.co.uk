@@ -7,12 +7,12 @@ export default function AboutMe(props) {
         </h2>
       </div>
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8">
-        <div className="flex flex-col gap-8 text-xl dark:text-slate-300 text-slate-800">
+        <div className="flex flex-col gap-8 text-lg dark:text-slate-300 text-slate-800">
           <p className="leading-relaxed">
             My current focus is on designing services at 
             <a
               href="https://www.next.co.uk"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
               target="_blank"
             >
               Next
@@ -20,7 +20,7 @@ export default function AboutMe(props) {
             , having previously led the design team at 
             <a
               href="https://www.independent.co.uk"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
               target="_blank"
             >
               The Independent
@@ -28,7 +28,7 @@ export default function AboutMe(props) {
              &{" "}
             <a
               href="https://www.standard.co.uk"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
               target="_blank"
             >
               London Evening Standard
@@ -40,7 +40,7 @@ export default function AboutMe(props) {
             React. You can find some of my prototypes over on{" "}
             <a
               href="https://codesandbox.io/u/bydanielpape"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-purple-400 hover:text-indigo-900"
+              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
               target="_blank"
             >
               CodeSandbox

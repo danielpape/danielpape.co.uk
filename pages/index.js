@@ -56,7 +56,7 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="bg-white dark:bg-slate-800">
+      <main className="dark:bg-slate-800">
         <Header />
         <Intro />
         <Grid />
