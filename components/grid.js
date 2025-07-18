@@ -27,7 +27,7 @@ export default function Grid(props) {
           alt="A person's hands holding a phone displaying the Next Pay credit overlay"
         />
       </div>
-      <div className="flex items-center justify-center md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 min-h-[140px] max-h-[240px] border border-slate-300 rounded-md overflow-hidden max-h-[160px]">
+      <div className="flex items-center justify-center md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 min-h-[140px] max-h-[240px] border border-slate-300 rounded-md overflow-hidden max-h-[160px] bg-white">
         <video
           src="/videos/TagAnimation.mp4"
           className="max-w-[240px] p-8"
@@ -46,11 +46,6 @@ export default function Grid(props) {
           <WarehouseIcon />
           <LorryIcon />
         </div>
-        {/* <div className="flex flex-row">
-          <p className="text-lg dark:text-slate-300 text-slate-800">
-            Icon Design
-          </p>
-        </div> */}
         <div className="flex flex-row gap-4">
           <DesktopIcon />
           <FactoryIcon />
