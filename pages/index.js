@@ -6,6 +6,7 @@ import Intro from "../components/intro";
 import Grid from "../components/grid";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
+import Footer from "../components/Footer";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
@@ -62,6 +63,7 @@ export default function Home() {
         <Grid />
         <AboutMe />
         <Experience />
+        <Footer />
       </main>
     </>
   );
