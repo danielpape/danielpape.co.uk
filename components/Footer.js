@@ -4,36 +4,39 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-zinc-900 text-zinc-200 py-8 px-4 mt-12">
+    <footer className="bg-indigo-950 text-white py-8 px-4 mt-12">
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm">
-        <p className="text-left">
-          © {currentYear} Daniel Pape. All rights reserved.
-        </p>
+        <div className="flex flex-col gap-2">
+          <p className="text-left">© {currentYear} by Daniel Pape.</p>
+          <p className="text-left">
+            This website is hosted on GitHub Pages and coded with 🫖 in 🇬🇧.
+          </p>
+        </div>
 
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-6 text-left">
+        <div className="flex flex-col gap-1 md:flex-row items-start md:gap-6 text-left">
           <a
             href="mailto:hello@bydanielpape.com"
-            className="hover:text-indigo-200 hover:underline hover:decoration-indigo-400"
+            className="underline decoration-indigo-300 hover:text-indigo-200 hover:decoration-indigo-400"
           >
-            hello@bydanielpape.com
+            Email
           </a>
 
           <a
             href="https://www.linkedin.com/in/bydanielpape"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-200 hover:underline hover:decoration-indigo-400"
+            className="underline decoration-indigo-300 hover:text-indigo-200 hover:decoration-indigo-400"
           >
             LinkedIn
           </a>
 
           <a
-            href="https://mastodon.social/@bydanielpape"
+            href="https://mastodon.social/@danielpape"
             target="_blank"
             rel="me noopener noreferrer"
-            className="hover:text-indigo-200 hover:underline hover:decoration-indigo-400"
+            className="underline decoration-indigo-300 hover:text-indigo-200 hover:decoration-indigo-400"
           >
-            Mastodon @bydanielpape
+            Mastodon
           </a>
         </div>
       </div>
