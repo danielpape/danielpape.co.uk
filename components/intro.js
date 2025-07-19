@@ -18,7 +18,7 @@ export default function Intro() {
           </h1>
         </div>
         <h2 className="col-start-1 col-span-12 md:col-start-7 md:col-span-5 dark:text-gray-300 text-gray-700">
-          My mission is to keep user experience at the heart at everything I
+          My mission is to keep user experience at the heart of everything I
           produce, so you’ll usually find me talking and presenting to users.
         </h2>
       </div>
