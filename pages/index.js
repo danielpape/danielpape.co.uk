@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Navigation from "../components/Navigation";
-import Intro from "../components/Intro";
+import Intro from "../components/intro";
 import Grid from "../components/grid";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";

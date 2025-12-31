@@ -2,6 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { getAllPosts } from "@/lib/posts";
 import React from "react";
+import Navigation from "../../components/Navigation";
 
 export async function getStaticProps() {
   const posts = getAllPosts();
@@ -19,6 +20,7 @@ export default function BlogIndex({
         <title>Blog</title>
         <meta name="description" content="Writing in markdown." />
       </Head>
+      <Navigation />
 
       <main className="mx-auto max-w-3xl px-6 py-12">
         <h1 className="text-3xl font-semibold">Blog</h1>

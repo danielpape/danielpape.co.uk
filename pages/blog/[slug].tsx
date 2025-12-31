@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import React from "react";
+import Navigation from "../../components/Navigation";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts();
@@ -35,7 +36,7 @@ export default function BlogPostPage({
           <meta name="description" content={post.frontmatter.description} />
         ) : null}
       </Head>
-
+      <Navigation />
       <main className="mx-auto max-w-3xl px-6 py-12">
         <article>
           <header className="mb-10">
