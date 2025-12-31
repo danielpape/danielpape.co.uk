@@ -12,7 +12,7 @@ export default function AboutMe(props) {
             My current focus is on designing services at 
             <a
               href="https://www.next.co.uk"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
+              className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
               target="_blank"
             >
               Next
@@ -20,7 +20,7 @@ export default function AboutMe(props) {
             , having previously led the design team at 
             <a
               href="https://www.independent.co.uk"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
+              className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
               target="_blank"
             >
               The Independent
@@ -28,7 +28,7 @@ export default function AboutMe(props) {
              &{" "}
             <a
               href="https://www.standard.co.uk"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
+              className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
               target="_blank"
             >
               London Evening Standard
@@ -40,7 +40,7 @@ export default function AboutMe(props) {
             React. You can find some of my prototypes over on{" "}
             <a
               href="https://codesandbox.io/u/bydanielpape"
-              className="dark:text-indigo-300 text-indigo-800 underline decoration-indigo-400 hover:text-indigo-900"
+              className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
               target="_blank"
             >
               CodeSandbox
