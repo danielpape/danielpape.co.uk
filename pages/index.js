@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
-import Header from "../components/header";
-import Intro from "../components/intro";
+import Navigation from "../components/Navigation";
+import Intro from "../components/Intro";
 import Grid from "../components/grid";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
@@ -58,7 +58,7 @@ export default function Home() {
         />
       </Head>
       <main className="dark:bg-slate-800">
-        <Header />
+        <Navigation />
         <Intro />
         <Grid />
         <AboutMe />

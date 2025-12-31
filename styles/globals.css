@@ -33,6 +33,17 @@ body {
   line-height: 1.2;
 }
 
+@media (prefers-color-scheme: dark) {
+  .marque {
+    color: #fff;
+  }
+}
+
+/* NAVIGATION */
+.navigation--link {
+  display: flex;
+}
+
 /* INTRO */
 .intro {
   display: grid;
@@ -90,7 +101,37 @@ body {
   color: var(--text-soft, var(--text-muted, #4b5563));
 }
 
+@media (prefers-color-scheme: dark) {
+  .intro-role {
+    color: white;
+  }
+  .intro-title {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .intro-title i {
+    color: #fff;
+  }
+
+  .intro-mission {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
 @media (max-width: 1024px) {
+  .navigation--link {
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 20px;
+  }
   .intro {
     margin: 5rem 1rem;
   }
