@@ -14,9 +14,9 @@ export default function LorryIcon(props) {
       <path
         d="M14.25 7.5H16.084C16.17 7.5 16.2502 7.54434 16.2959 7.61719L18.4619 11.083C18.4866 11.1226 18.5 11.1682 18.5 11.2148V16.25C18.5 16.3881 18.3881 16.5 18.25 16.5H14.25C14.1119 16.5 14 16.3881 14 16.25V7.75C14 7.61193 14.1119 7.5 14.25 7.5Z"
         stroke="#007A7A"
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
-      <path d="M18 11.5H15" stroke="#007A7A" stroke-linecap="square" />
+      <path d="M18 11.5H15" stroke="#007A7A" strokeLinecap="square" />
       <mask id="path-4-inside-1_1124_3887" fill="white">
         <rect x="1" y="3" width="14" height="14" rx="0.75" />
       </mask>
@@ -28,7 +28,7 @@ export default function LorryIcon(props) {
         rx="0.75"
         fill="#E3F9F9"
         stroke="#007A7A"
-        stroke-width="3"
+        strokeWidth="3"
         mask="url(#path-4-inside-1_1124_3887)"
       />
       <circle cx="4.5" cy="16.5" r="2" fill="#E3F9F9" stroke="#007A7A" />
