@@ -4,9 +4,11 @@ export default function Navigation(props) {
       <div className="lg:col-start-2 lg:col-span-5 md:col-start-2 md:col-span-5 col-start-1 col-span-5 flex flex-col justify-center md:justify-end">
         <div className="">
           <h1 className="marque">
-            <b>Daniel Pape</b>
-            <br />
-            Lead UX Designer
+            <a href="/">
+              <b>Daniel Pape</b>
+              <br />
+              Lead UX Designer
+            </a>
           </h1>
         </div>
       </div>
