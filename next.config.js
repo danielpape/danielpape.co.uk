@@ -9,9 +9,4 @@ module.exports = {
     loader: "custom",
     unoptimized: true, // recommended for static export (avoids image optimizer)
   },
-
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
 };
