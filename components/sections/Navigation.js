@@ -50,7 +50,6 @@ export default function Navigation(props) {
               height="16"
               focusable="false"
               role="presentation"
-              class
             >
               <path
                 className="dark:fill-slate-200 fill-slate-800"

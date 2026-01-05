@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import React from "react";
-import Navigation from "../../components/Navigation";
+import Navigation from "../../components/sections/Navigation";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts();
