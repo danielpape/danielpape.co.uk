@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
 
-import Navigation from "../components/Navigation";
-import Splash from "../components/Splash";
-import Grid from "../components/grid";
-import AboutMe from "../components/aboutme";
-import Experience from "../components/experience";
-import Footer from "../components/Footer";
+import Navigation from "../components/sections/Navigation";
+import Splash from "../components/sections/Splash";
+import Grid from "../components/sections/Grid";
+import About from "../components/sections/About";
+import Experience from "../components/sections/Experience";
+import Footer from "../components/sections/Footer";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
@@ -61,7 +61,7 @@ export default function Home() {
         <Navigation />
         <Splash />
         <Grid />
-        <AboutMe />
+        <About />
         <Experience />
         <Footer />
       </main>

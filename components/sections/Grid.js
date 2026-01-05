@@ -1,11 +1,11 @@
-import DesktopIcon from "./icons/DesktopIcon";
-import FactoryIcon from "./icons/FactoryIcon";
-import HomeIcon from "./icons/HomeIcon";
-import LorryIcon from "./icons/LorryIcon";
-import ParcelIcon from "./icons/ParcelIcon";
-import StoreIcon from "./icons/StoreIcon";
-import TPIcon from "./icons/TPIcon";
-import WarehouseIcon from "./icons/WarehouseIcon";
+import DesktopIcon from "../icons/DesktopIcon";
+import FactoryIcon from "../icons/FactoryIcon";
+import HomeIcon from "../icons/HomeIcon";
+import LorryIcon from "../icons/LorryIcon";
+import ParcelIcon from "../icons/ParcelIcon";
+import StoreIcon from "../icons/StoreIcon";
+import TPIcon from "../icons/TPIcon";
+import WarehouseIcon from "../icons/WarehouseIcon";
 
 export default function Grid(props) {
   return (

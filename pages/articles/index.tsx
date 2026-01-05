@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { getAllPosts } from "@/lib/posts";
 import React from "react";
-import Navigation from "../../components/Navigation";
+import Navigation from "../../components/sections/Navigation";
 
 export async function getStaticProps() {
   const posts = getAllPosts();

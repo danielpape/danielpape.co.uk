@@ -9,7 +9,8 @@ export default function AboutMe(props) {
       <div className="md:col-start-6 md:col-span-7 col-start-1 col-span-12 flex flex-col gap-8">
         <div className="flex flex-col gap-8 text-lg dark:text-slate-300 text-slate-800">
           <p className="leading-relaxed">
-            My current focus is on designing services at 
+            I am currently Lead UX Designer in the Checkout & My Account Team
+            at 
             <a
               href="https://www.next.co.uk"
               className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"

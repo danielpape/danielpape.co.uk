@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundGradient from "./decoration/BackgroundGradient";
+import BackgroundGradient from "../decoration/BackgroundGradient";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
