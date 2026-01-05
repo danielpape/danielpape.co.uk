@@ -1,4 +1,4 @@
-export default function Intro() {
+export default function Splash() {
   return (
     <section class="intro">
       <div class="intro-left">

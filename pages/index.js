@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Navigation from "../components/Navigation";
-import Intro from "../components/intro";
+import Splash from "../components/Splash";
 import Grid from "../components/grid";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
@@ -59,7 +59,7 @@ export default function Home() {
       </Head>
       <main className="dark:bg-slate-800">
         <Navigation />
-        <Intro />
+        <Splash />
         <Grid />
         <AboutMe />
         <Experience />

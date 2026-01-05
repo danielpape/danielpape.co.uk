@@ -1,12 +1,13 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
 
-  // Required for GitHub Pages static export
-  output: "export",
+  // helps GitHub Pages generate /blog/my-post/ as folder URLs
   trailingSlash: true,
 
   images: {
     loader: "custom",
+    unoptimized: true, // recommended for static export (avoids image optimizer)
   },
 
   i18n: {
