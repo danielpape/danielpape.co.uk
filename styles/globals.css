@@ -192,6 +192,31 @@ body {
   .intro-mission {
     color: rgba(255, 255, 255, 0.8);
   }
+
+  .experience-overline {
+    color: rgb(148 163 184);
+  }
+  .experience-title {
+    color: white;
+  }
+
+  .experience-item {
+    color: rgb(226 232 240);
+  }
+
+  .experience-secondary {
+    color: rgb(148 163 184);
+  }
+
+  .experience-secondary span {
+    color: rgb(226 232 240);
+    background: radial-gradient(
+      circle at 20% 0,
+      rgba(253, 187, 61, 0.12),
+      transparent 55%
+    );
+    border: solid 1px rgba(253, 187, 61, 0.12);
+  }
 }
 
 @media (max-width: 1024px) {
