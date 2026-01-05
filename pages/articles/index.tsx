@@ -71,7 +71,10 @@ export default function BlogIndex({
           {posts.map((post) => (
             <li key={post.slug} className="border-b border-neutral-200 pb-6">
               <h2 className="text-xl font-semibold">
-                <Link href={`/blog/${post.slug}`} className="hover:underline">
+                <Link
+                  href={`/articles/${post.slug}`}
+                  className="hover:underline"
+                >
                   {post.frontmatter.title}
                 </Link>
               </h2>
