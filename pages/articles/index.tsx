@@ -4,6 +4,8 @@ import { getAllPosts } from "@/lib/posts";
 import React from "react";
 import Navigation from "../../components/sections/Navigation";
 import Footer from "../../components/sections/Footer";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
 
 export async function getStaticProps() {
   const posts = getAllPosts();

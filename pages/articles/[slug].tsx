@@ -6,6 +6,8 @@ import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import React from "react";
 import Navigation from "../../components/sections/Navigation";
 import Footer from "../../components/sections/Footer";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts();
