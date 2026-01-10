@@ -15,7 +15,7 @@ This year, I want to be more open about that process. I’ll be sharing what I�
 
 ## My pick of the week
 
-One thing I’ve enjoyed this week is _Adam’s Morning Walk_, a podcast by Adam Wathan, creator of Tailwind CSS.
+One thing I’ve enjoyed this week is [_Adam’s Morning Walk_](https://podcasts.apple.com/gb/podcast/adams-morning-walk/id1854806936), a podcast by Adam Wathan, creator of Tailwind CSS.
 
 If you’re interested in web styling, product design, or running a design-led business, it’s well worth a listen. Adam is refreshingly open about the realities of building and sustaining a developer-focused product in 2025.
 

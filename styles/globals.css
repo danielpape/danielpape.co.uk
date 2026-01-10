@@ -191,6 +191,45 @@ main {
   width: 80px;
 }
 
+/* POSTS */
+
+.posts {
+  margin: 2rem 0;
+}
+
+.posts__post-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.posts__post-title {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+.post__post-date {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.post__post-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ARTICLES */
+
+.article__date {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -206,6 +245,20 @@ main {
 
 .page__article > h2 {
   font-size: 1.865rem;
+}
+
+.page__article > p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.page__article > p > a {
+  text-decoration: underline;
+  text-decoration-color: #ffb84d;
+  color: rgba(255, 255, 255, 1);
+}
+
+.page__article > p > a:hover {
+  color: rgb(255 239 194);
 }
 
 @media (prefers-color-scheme: dark) {

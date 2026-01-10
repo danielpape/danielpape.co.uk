@@ -83,7 +83,7 @@ export default function BlogPostPage({
         <article className="page__article">
           <header className="mb-10">
             <h1 className="text-3xl font-semibold">{post.frontmatter.title}</h1>
-            <div className="mt-1 text-sm text-neutral-500">
+            <div className="article__date">
               {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
                 year: "numeric",
                 month: "long",
