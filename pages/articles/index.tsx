@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getAllPosts } from "@/lib/posts";
 import React from "react";
 import Navigation from "../../components/sections/Navigation";
+import Footer from "../../components/sections/Footer";
 
 export async function getStaticProps() {
   const posts = getAllPosts();
@@ -109,6 +110,7 @@ export default function BlogIndex({
           ))}
         </ul>
       </main>
+      <Footer />
     </>
   );
 }

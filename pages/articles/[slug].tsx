@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import React from "react";
 import Navigation from "../../components/sections/Navigation";
+import Footer from "../../components/sections/Footer";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts();
@@ -76,32 +77,26 @@ export default function BlogPostPage({
         />
       </Head>
       <Navigation />
-      <main className="mx-auto max-w-3xl px-6 py-12">
-        <article>
+      <main className="mx-auto max-w-3xl px-6 py-12 page">
+        <article className="page__article">
           <header className="mb-10">
             <h1 className="text-3xl font-semibold">{post.frontmatter.title}</h1>
-            <div className="mt-3 text-sm text-neutral-500">
+            <div className="mt-1 text-sm text-neutral-500">
               {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
               })}
             </div>
-            {post.frontmatter.description ? (
-              <p className="mt-4 text-neutral-700">
-                {post.frontmatter.description}
-              </p>
-            ) : null}
           </header>
 
           {/* If you use Tailwind Typography, apply `prose` here */}
-          <div className="prose prose-neutral max-w-none dark:prose-invert">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {post.content}
-            </ReactMarkdown>
-          </div>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {post.content}
+          </ReactMarkdown>
         </article>
       </main>
+      <Footer />
     </>
   );
 }

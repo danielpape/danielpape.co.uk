@@ -57,7 +57,7 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="dark:bg-slate-800">
+      <main>
         <Navigation />
         <Splash />
         <Grid />

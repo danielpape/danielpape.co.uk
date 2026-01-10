@@ -18,11 +18,30 @@ body {
     #ffffff;
 }
 
+main {
+  min-height: 90vh;
+}
+
 .icon {
   fill: #000;
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background: radial-gradient(
+        circle at 20% 0,
+        rgba(253, 187, 61, 0.12),
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 80% 100%,
+        rgba(120, 154, 255, 0.18),
+        transparent 45%
+      ),
+      #020617;
+    color: #fff;
+  }
+
   .icon {
     fill: #fff;
   }
@@ -31,16 +50,10 @@ body {
 /* MARQUE */
 .marque {
   line-height: 1.2;
-
+  color: #fff;
   :hover {
     transition: all 0.4s ease-in-out;
     color: var(--text-muted, #4b5563);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .marque {
-    color: #fff;
   }
 }
 
@@ -176,6 +189,23 @@ body {
 
 .experience-logo-sm {
   width: 80px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.page__article > h2 {
+  font-size: 1.865rem;
 }
 
 @media (prefers-color-scheme: dark) {
