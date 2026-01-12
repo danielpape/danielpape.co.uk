@@ -16,10 +16,16 @@ body {
       transparent 55%
     ),
     #ffffff;
+  color: #000;
 }
 
 main {
   min-height: 90vh;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: #ffb84d;
 }
 
 .icon {
@@ -48,9 +54,9 @@ main {
 }
 
 /* MARQUE */
-.marque {
+.marque a {
   line-height: 1.2;
-  color: #fff;
+  text-decoration: none;
   :hover {
     transition: all 0.4s ease-in-out;
     color: var(--text-muted, #4b5563);
@@ -227,7 +233,6 @@ main {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-family: monospace;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .page {
@@ -247,21 +252,14 @@ main {
   font-size: 1.865rem;
 }
 
-.page__article > p {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.page__article > p > a {
-  text-decoration: underline;
-  text-decoration-color: #ffb84d;
-  color: rgba(255, 255, 255, 1);
-}
-
 .page__article > p > a:hover {
   color: rgb(255 239 194);
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+  }
   .intro-role {
     color: white;
   }

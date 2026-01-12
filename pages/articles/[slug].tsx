@@ -81,8 +81,8 @@ export default function BlogPostPage({
       <Navigation />
       <main className="mx-auto max-w-3xl px-6 py-12 page">
         <article className="page__article">
-          <header className="mb-10">
-            <h1 className="text-3xl font-semibold">{post.frontmatter.title}</h1>
+          <header className="article__header">
+            <h1 className="posts__post-title">{post.frontmatter.title}</h1>
             <div className="article__date">
               {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
                 year: "numeric",
