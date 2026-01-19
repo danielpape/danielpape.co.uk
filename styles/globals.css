@@ -23,9 +23,20 @@ main {
   min-height: 90vh;
 }
 
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
 a {
   text-decoration: underline;
   text-decoration-color: #ffb84d;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  max-width: 40rem;
 }
 
 header {
@@ -260,6 +271,59 @@ header {
   gap: 1rem;
 }
 
+/* ABOUT ME*/
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  max-width: 1024px; /* Tailwind max-w-screen-lg */
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 2rem; /* pt-8 */
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem;
+  min-height: 50vh;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1024px; /* Tailwind max-w-screen-lg */
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 2rem; /* pt-8 */
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem;
+  min-height: 50vh;
+}
+
+.experience-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-item_section {
+  flex: 1;
+}
+
+.experience-item_main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex: 1;
+}
+
+.experience-secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .experience-wrapper {
   display: flex;
   flex-direction: column;
@@ -271,12 +335,17 @@ header {
   font-weight: 500;
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
+  min-height: 3rem;
 }
 
 .experience-item {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 0.5rem;
+  background-color: color-mix(in oklab, white 5%, transparent);
+  padding: 2rem 1rem;
+  border-radius: 4px;
 }
 
 .experience-group {
@@ -395,6 +464,13 @@ header {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+  }
+
+  .experience-item_main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
   }
 
   .navigation__links > a {

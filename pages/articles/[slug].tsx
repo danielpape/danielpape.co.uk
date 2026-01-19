@@ -81,7 +81,7 @@ export default function BlogPostPage({
       <Navigation />
       <main className="mx-auto max-w-3xl px-6 py-12 page">
         <article className="page__article">
-          <header className="article__header">
+          <div className="article__header">
             <h1 className="posts__post-title">{post.frontmatter.title}</h1>
             <div className="article__date">
               {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
@@ -90,7 +90,7 @@ export default function BlogPostPage({
                 day: "numeric",
               })}
             </div>
-          </header>
+          </div>
 
           {/* If you use Tailwind Typography, apply `prose` here */}
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
