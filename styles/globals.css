@@ -595,6 +595,14 @@ header {
     color: rgb(226 232 240);
   }
 
+  .experience-info {
+    color: rgb(148 163 184);
+  }
+
+  .experience-info span {
+    color: rgb(226 232 240);
+  }
+
   .experience-secondary {
     color: rgb(148 163 184);
   }
