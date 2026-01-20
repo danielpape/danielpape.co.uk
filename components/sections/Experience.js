@@ -32,6 +32,7 @@ export default function Experience(props) {
         </div>
         <div className="experience-secondary">
           <div className="experience-item">
+            <div className="experience-overline">2014 - 2018</div>
             <div className="experience-content">
               <div className="experience-title_secondary">
                 The Independent & London Evening Standard
