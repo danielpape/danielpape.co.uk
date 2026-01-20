@@ -620,4 +620,8 @@ header {
   .experience-item {
     background-color: color-mix(in oklab, white 5%, transparent);
   }
+
+  .bento__item {
+    border: 1px rgba(164, 148, 77, 0.08) solid;
+  }
 }
