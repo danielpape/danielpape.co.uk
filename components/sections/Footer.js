@@ -25,13 +25,13 @@ export default function Footer() {
         </div>
 
         {/* Socials Column — aligned to column 12 (far right) */}
-        <div className="col-span-12 md:col-start-12 md:col-span-1 flex flex-col gap-2 text-neutral-800">
+        <div className="col-span-12 md:col-start-12 md:col-span-1 flex flex-col items-start gap-2 text-neutral-800">
           <h3 className="text-xs uppercase text-neutral-800 dark:text-neutral-200 tracking-wide">
             Socials
           </h3>
           <a
             href="mailto:hello@bydanielpape.com"
-            className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
+            className="inline-block underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
           >
             Email
           </a>
@@ -39,7 +39,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/bydanielpape"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline dark:text-neutral-100 decoration-main-300  hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
+            className="inline-block underline dark:text-neutral-100 decoration-main-300  hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
           >
             LinkedIn
           </a>
@@ -48,7 +48,7 @@ export default function Footer() {
             href="https://mastodon.social/@danielpape"
             target="_blank"
             rel="me noopener noreferrer"
-            className="underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
+            className="inline-block underline dark:text-neutral-100 decoration-main-300 hover:text-main-600 dark:hover:text-main-100 hover:decoration-main-400"
           >
             Mastodon
           </a>
