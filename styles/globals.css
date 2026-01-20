@@ -75,6 +75,7 @@ header {
 .marque a {
   line-height: 1.2;
   text-decoration: none;
+  background: none;
   :hover {
     transition: all 0.4s ease-in-out;
     color: var(--text-muted, #4b5563);
@@ -93,6 +94,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
+  background-color: transparent;
 }
 
 .navigation__link-icon {
@@ -120,11 +122,6 @@ header {
 
   grid-column-start: 10;
   grid-column-end: span 3;
-}
-
-.navigation__link {
-  display: block;
-  color: #1f2937; /* gray-800 */
 }
 
 .navigation__link-email span {
