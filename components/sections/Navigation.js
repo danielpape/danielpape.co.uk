@@ -12,7 +12,11 @@ export default function Navigation(props) {
       </div>
       <div className="navigation__right">
         <div className="navigation__links">
-          <a href="mailto:hello@bydanielpape.com" className="navigation__link">
+          <a
+            href="mailto:hello@bydanielpape.com"
+            className="navigation__link"
+            aria-label="Email Daniel Pape"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -32,6 +36,8 @@ export default function Navigation(props) {
             href="https://linkedin.com/in/bydanielpape"
             target="_blank"
             className="navigation__link"
+            rel="noreferrer"
+            aria-label="View Daniel Pape on LinkedIn"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

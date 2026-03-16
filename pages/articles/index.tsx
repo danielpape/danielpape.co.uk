@@ -4,8 +4,6 @@ import { getAllPosts } from "@/lib/posts";
 import React from "react";
 import Navigation from "../../components/sections/Navigation";
 import Footer from "../../components/sections/Footer";
-import "@fontsource/dm-sans/400.css";
-import "@fontsource/dm-sans/500.css";
 
 export async function getStaticProps() {
   const posts = getAllPosts();
@@ -47,20 +45,6 @@ export default function BlogIndex({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-32006853-1"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-32006853-1', { page_path: window.location.pathname });
-            `,
-          }}
-        />
       </Head>
       <Navigation />
 

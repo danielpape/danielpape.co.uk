@@ -8,9 +8,6 @@ import About from "../components/sections/About";
 import Experience from "../components/sections/Experience";
 import Footer from "../components/sections/Footer";
 
-import "@fontsource/dm-sans/400.css";
-import "@fontsource/dm-sans/500.css";
-
 export default function Home() {
   return (
     <>
@@ -42,20 +39,6 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-32006853-1"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-32006853-1', { page_path: window.location.pathname });
-            `,
-          }}
-        />
       </Head>
       <main>
         <Navigation />
