@@ -1,4 +1,4 @@
-# Daniel Pape's Website 2025
+# Daniel Pape's Website 2026
 
 Hey! My name is Daniel Pape. I'm a UX Designer from the UK and this is the source code to my website.
 
@@ -8,7 +8,7 @@ I used the following things to build this site:
 
 - React
 - NextJS
-- Tailwind CSS
+- ~~Tailwind CSS~~
 - Github Pages
 
 ## Design & Code

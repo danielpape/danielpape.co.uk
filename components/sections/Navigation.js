@@ -1,20 +1,20 @@
 export default function Navigation(props) {
   return (
-    <header>
-      <div className="navigation__left">
-        <h1 className="marque">
-          <a href="/">
-            <b>Daniel Pape</b>
+    <header className="site-header">
+      <div className="site-header__brand">
+        <h1 className="site-header__title">
+          <a href="/" className="site-header__home-link">
+            <span className="site-header__name">Daniel Pape</span>
             <br />
             Lead UX Designer
           </a>
         </h1>
       </div>
-      <div className="navigation__right">
-        <div className="navigation__links">
+      <div className="site-header__actions">
+        <div className="site-header__links">
           <a
             href="mailto:hello@bydanielpape.com"
-            className="navigation__link"
+            className="site-header__link"
             aria-label="Email Daniel Pape"
           >
             <svg
@@ -23,11 +23,11 @@ export default function Navigation(props) {
               height="16"
               focusable="false"
               role="presentation"
-              className="navigation__link-icon"
+              className="site-header__link-icon"
             >
               <path d="M15 2H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zM4.94 9.94l-3 3c-.12.12-.28.18-.44.18s-.32-.06-.44-.18a.628.628 0 010-.88l3-3c.24-.24.64-.24.88 0 .25.24.25.64 0 .88zm10 3c-.12.12-.28.18-.44.18s-.32-.06-.44-.18l-3-3a.628.628 0 010-.88c.24-.24.64-.24.88 0l3 3c.25.24.25.64 0 .88zm0-9L8.8 10.09c-.22.22-.51.33-.8.33s-.58-.11-.8-.33L1.06 3.94c-.24-.24-.24-.64 0-.88s.64-.24.88 0L8 9.12l6.06-6.06c.24-.24.64-.24.88 0 .25.24.25.64 0 .88z"></path>
             </svg>
-            <span className="navigation__link-email">
+            <span className="site-header__link-text">
               hello
               <span>@bydanielpape.com</span>
             </span>
@@ -35,7 +35,7 @@ export default function Navigation(props) {
           <a
             href="https://linkedin.com/in/bydanielpape"
             target="_blank"
-            className="navigation__link"
+            className="site-header__link"
             rel="noreferrer"
             aria-label="View Daniel Pape on LinkedIn"
           >
@@ -45,11 +45,11 @@ export default function Navigation(props) {
               height="16"
               focusable="false"
               role="presentation"
-              className="navigation__link-icon"
+              className="site-header__link-icon"
             >
               <path d="M14.815 0a1.17 1.17 0 011.176 1.026l.009.127v13.692a1.171 1.171 0 01-1.058 1.15l-.127.005H1.18a1.169 1.169 0 01-1.173-1.028L0 14.845V1.155A1.168 1.168 0 011.053.006L1.181 0h13.634zM11 5.812l-.213-.004A2.494 2.494 0 008.64 6.887l-.098.154h-.031V5.998H6.235v7.635h2.37V9.856c0-.996.19-1.96 1.424-1.96 1.006 0 1.191.777 1.225 1.547l.008.477v3.713h2.37l.002-4.188c0-1.994-.417-3.54-2.633-3.633zm-6.256.186H2.372v7.635h2.373V5.998zM3.56 2.203a1.376 1.376 0 100 2.751 1.376 1.376 0 000-2.751z"></path>
             </svg>
-            <span className="navigation__link-email">
+            <span className="site-header__link-text">
               <span>@</span>
               bydanielpape
             </span>

@@ -1,5 +1,4 @@
-import "@fontsource/dm-sans/400.css";
-import "@fontsource/dm-sans/500.css";
+import "@fontsource-variable/dm-sans";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {

@@ -63,11 +63,11 @@ export default function BlogPostPage({
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Navigation />
-      <main className="mx-auto max-w-3xl px-6 py-12 page">
-        <article className="page__article">
-          <div className="article__header">
-            <h1 className="posts__post-title">{post.frontmatter.title}</h1>
-            <div className="article__date">
+      <main className="article-page">
+        <article className="article-page__content">
+          <div className="article-page__header">
+            <h1 className="article-page__title">{post.frontmatter.title}</h1>
+            <div className="article-page__date">
               {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
                 year: "numeric",
                 month: "long",
@@ -76,7 +76,6 @@ export default function BlogPostPage({
             </div>
           </div>
 
-          {/* If you use Tailwind Typography, apply `prose` here */}
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {post.content}
           </ReactMarkdown>

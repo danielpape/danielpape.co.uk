@@ -48,39 +48,41 @@ export default function BlogIndex({
       </Head>
       <Navigation />
 
-      <main className="mx-auto max-w-3xl px-6 py-12">
-        <h1 className="text-3xl font-semibold">Articles</h1>
+      <main className="posts-page">
+        <div className="posts-page__inner">
+          <h1 className="posts-page__title">Articles</h1>
 
-        <ul className="posts">
-          {posts.map((post) => (
-            <li key={post.slug} className="posts__post-item">
-              <div>
-                <h2 className="posts__post-title">
-                  <Link
-                    href={`/articles/${post.slug}`}
-                    className="hover:underline"
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                </h2>
+          <ul className="posts-list">
+            {posts.map((post) => (
+              <li key={post.slug} className="posts-list__item">
+                <div className="posts-list__header">
+                  <h2 className="posts-list__title">
+                    <Link
+                      href={`/articles/${post.slug}`}
+                      className="posts-list__link"
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                  </h2>
 
-                <div className="experience-overline">
-                  {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })}
+                  <div className="posts-list__date">
+                    {new Date(post.frontmatter.date).toLocaleDateString("en-GB", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </div>
                 </div>
-              </div>
 
-              {post.frontmatter.description ? (
-                <p className="post__post-description">
-                  {post.frontmatter.description}
-                </p>
-              ) : null}
-            </li>
-          ))}
-        </ul>
+                {post.frontmatter.description ? (
+                  <p className="posts-list__description">
+                    {post.frontmatter.description}
+                  </p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </div>
       </main>
       <Footer />
     </>
