@@ -10,22 +10,25 @@ export default function Experience(props) {
               <div className="experience__company">Next</div>
               <div className="experience__group">
                 <div className="experience__info">
-                  Lead UX Designer <span className="experience__pill">2024 - present</span>
+                  Lead UX Designer{" "}
+                  <span className="experience__pill">2024 - present</span>
                 </div>
                 <div className="experience__info">
-                  Senior UX Designer <span className="experience__pill">2022 - 2024</span>
+                  Senior UX Designer{" "}
+                  <span className="experience__pill">2022 - 2024</span>
                 </div>
                 <div className="experience__info">
-                  UX Designer <span className="experience__pill">2018 - 2022</span>
+                  UX Designer{" "}
+                  <span className="experience__pill">2018 - 2022</span>
                 </div>
               </div>
             </div>
             <div className="experience__section">
               <p className="experience__summary">
                 At Next, I lead user-centred design across key initiatives,
-                including the Customer Service replatforming, which delivers
-                £2.5m in annual savings, and major Checkout and My Account
-                projects such as Single Page Checkout.
+                including replatforming the Customer Service platform, which
+                delivers £2.5m in annual savings, and major Checkout and My
+                Account projects such as Single Page Checkout.
               </p>
             </div>
           </div>
