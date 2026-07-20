@@ -6,7 +6,7 @@ export default function Navigation(props) {
           <a href="/" className="site-header__home-link">
             <span className="site-header__name">Daniel Pape</span>
             <br />
-            Lead UX Designer
+            Lead Product Designer
           </a>
         </h1>
       </div>

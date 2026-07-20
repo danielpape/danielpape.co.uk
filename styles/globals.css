@@ -10,20 +10,26 @@ html {
 
 body {
   margin: 0;
-  font-family: "DM Sans Variable", "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
-  background: radial-gradient(
-      circle at 20% 0,
-      rgba(253, 187, 61, 0.12),
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 80% 100%,
-      rgba(120, 154, 255, 0.18),
-      transparent 55%
+  background:
+    radial-gradient(circle at 20% 0, rgba(253, 187, 61, 0.12), transparent 55%),
+     radial-gradient(
+        circle at 80% 100%,
+        rgba(120, 154, 255, 0.05),
+        transparent 20%
     ),
     #ffffff;
   color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Pro", serif;
 }
 
 a {
@@ -34,6 +40,14 @@ a {
 
 main {
   min-height: 90vh;
+}
+
+header {
+  font-family: "Inter", sans-serif;
+}
+
+#__next > main > header > div.site-header__brand > h1 {
+  font-family: "Inter", sans-serif;
 }
 
 .site-header {
@@ -115,31 +129,43 @@ main {
 
 .hero {
   z-index: 20;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1024px;
+  margin: 3rem auto 0;
+  padding: 0 1rem;
 }
 
 .hero__lead {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  grid-column: 4 / span 6;
+  max-width: 56rem;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .hero__title {
   margin: 0;
-  font-size: 2.75rem;
-  line-height: 3rem;
+  font-size: clamp(2.75rem, 4.7vw, 3.85rem);
+  line-height: 0.98;
   letter-spacing: -0.03em;
   font-weight: 400;
   color: #4b5563;
+}
+
+.hero__title-line {
+  display: block;
+}
+
+.hero__title-line + .hero__title-line {
+  margin-top: 0.25rem;
+}
+
+.hero__title-line--accent {
+  max-width: none;
 }
 
 .hero__title i {
@@ -150,12 +176,16 @@ main {
   color: #000000;
 }
 
+.hero__title-copy {
+  color: #4b5563;
+}
+
 .hero__mission {
-  grid-column: 4 / span 6;
   margin: 0;
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  max-width: 36rem;
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 1.6;
   font-weight: 400;
   color: #4b5563;
 }
@@ -224,10 +254,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  min-height: 50vh;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 2rem 1rem 0;
+  padding: 2rem 1rem;
 }
 
 .about__title,
@@ -240,14 +269,13 @@ main {
 
 .about__body,
 .experience__summary,
-.site-footer__meta,
 .site-footer__description,
 .article-page__content p,
 .article-page__content li {
   max-width: 40rem;
   margin: 0;
   font-size: 1.25rem;
-  line-height: 2rem;
+  line-height: 1.6;
 }
 
 .about__link,
@@ -451,7 +479,7 @@ main {
   gap: 1.5rem;
   max-width: 1280px;
   margin: 0 auto;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.25rem;
 }
 
@@ -470,18 +498,20 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 1rem;
   grid-column: 1 / span 12;
   color: rgb(38 38 38);
 }
 
 .site-footer__heading {
   margin: 0;
-  color: rgb(38 38 38);
-  font-size: 0.75rem;
+  color: rgb(71 85 105);
+  font-family: monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   line-height: 1rem;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .site-footer__meta,
@@ -491,8 +521,9 @@ main {
 
 .site-footer__description {
   max-width: 28rem;
-  font-size: 1.125rem;
-  line-height: 1.375;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 500;
 }
 
 .site-footer__link {
@@ -573,17 +604,15 @@ main {
   }
 
   .hero {
-    margin: 5rem 1rem;
-  }
-
-  .hero__lead,
-  .hero__mission {
-    grid-column: 1 / span 12;
+    margin: 4rem auto 0;
   }
 
   .hero__title {
-    font-size: 2.2rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+  }
+
+  .hero__mission {
+    font-size: 1.125rem;
   }
 
   .experience__primary,
@@ -594,15 +623,16 @@ main {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: radial-gradient(
+    background:
+      radial-gradient(
         circle at 20% 0,
         rgba(253, 187, 61, 0.12),
         transparent 25%
       ),
-      radial-gradient(
+     radial-gradient(
         circle at 80% 100%,
-        rgba(120, 154, 255, 0.18),
-        transparent 45%
+        rgba(120, 154, 255, 0.05),
+        transparent 20%
       ),
       #020617;
     color: #ffffff;
