@@ -52,12 +52,12 @@ export default function Experience(props) {
                 Creative roles & placements
               </div>
               <div className="experience__group">
-                <div className="experience__info">PhotoBox</div>
-                <div className="experience__info">Skive Agency</div>
                 <div className="experience__info">BBH</div>
+                <div className="experience__info">PhotoBox</div>
                 <div className="experience__info">
                   Lean Mean Fighting Machine
                 </div>
+                <div className="experience__info">Skive Agency</div>
               </div>
             </div>
           </div>
