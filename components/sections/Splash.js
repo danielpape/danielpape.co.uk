@@ -5,7 +5,7 @@ export default function Splash() {
         <h1 className="hero__title">
           <span className="hero__title-line">
             <b className="hero__role">Product Designer</b>
-            <span className="hero__title-copy"> crafting</span>
+            <span className="hero__title"> crafting</span>
           </span>
           <span className="hero__title-line hero__title-line--accent">
             <i>simple</i>, <i>accessible</i> digital services.

@@ -1,3 +1,17 @@
+:root {
+  --golden-hour-50: #fffaed;
+  --golden-hour-100: #fff3d4;
+  --golden-hour-200: #ffe4a8;
+  --golden-hour-300: #ffcf71;
+  --golden-hour-400: #ffb84d;
+  --golden-hour-500: #fe9611;
+  --golden-hour-600: #ef7907;
+  --golden-hour-700: #c65c08;
+  --golden-hour-800: #9d480f;
+  --golden-hour-900: #7e3d10;
+  --golden-hour-950: #441d06;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -13,12 +27,12 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   background:
-    radial-gradient(circle at 20% 0, rgba(253, 187, 61, 0.12), transparent 55%),
-     radial-gradient(
-        circle at 80% 100%,
-        rgba(120, 154, 255, 0.05),
-        transparent 20%
+    radial-gradient(
+      circle at 20% 0,
+      color-mix(in srgb, var(--golden-hour-400) 12%, transparent),
+      transparent 55%
     ),
+    radial-gradient(circle at 80% 100%, rgba(120, 154, 255, 0.05), transparent 20%),
     #ffffff;
   color: #000000;
 }
@@ -34,8 +48,8 @@ h6 {
 
 a {
   text-decoration: underline;
-  text-decoration-color: #ffb84d;
-  background-color: rgba(255, 184, 77, 0.08);
+  text-decoration-color: var(--golden-hour-400);
+  background-color: color-mix(in srgb, var(--golden-hour-400) 8%, transparent);
 }
 
 main {
@@ -102,7 +116,8 @@ header {
 .site-header__links {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0;
 }
 
 .site-header__link {
@@ -111,21 +126,22 @@ header {
   justify-content: flex-start;
   gap: 0.5rem;
   color: inherit;
-  text-decoration-color: #ffb84d;
+  text-decoration-color: var(--golden-hour-400);
   background: none;
+  padding: 1px 4px;
+  transition: all 0.3s;
 }
 
 .site-header__link:hover {
-  color: #ffb84d;
+  color: var(--golden-hour-900);
+    background-color: color-mix(in srgb, var(--golden-hour-400) 8%, transparent);
+
 }
 
 .site-header__link-icon {
   fill: #000000;
 }
 
-.site-header__link-text span {
-  color: #6b7280;
-}
 
 .hero {
   z-index: 20;
@@ -230,7 +246,11 @@ header {
   width: 100%;
   height: 100%;
   background:
-    radial-gradient(circle at top, rgba(255, 184, 77, 0.2), transparent 55%),
+    radial-gradient(
+      circle at top,
+      color-mix(in srgb, var(--golden-hour-400) 20%, transparent),
+      transparent 55%
+    ),
     linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(120, 154, 255, 0.14));
 }
 
@@ -284,8 +304,14 @@ header {
 .site-footer__link {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: #ffb84d;
-  background-color: rgba(255, 184, 77, 0.08);
+  text-decoration-color: var(--golden-hour-400);
+  background-color: color-mix(in srgb, var(--golden-hour-400) 8%, transparent);
+  transition: all 0.4s;
+}
+
+.about__link:hover {
+    color: var(--golden-hour-900);
+    background-color: color-mix(in srgb, var(--golden-hour-500) 8%, transparent);
 }
 
 .experience {
@@ -531,6 +557,11 @@ header {
   color: rgb(38 38 38);
 }
 
+.site-footer__link:hover {
+    color: var(--golden-hour-900);
+    background-color: color-mix(in srgb, var(--golden-hour-500) 8%, transparent);
+}
+
 @media (min-width: 768px) {
   .bento {
     grid-template-columns: repeat(4, 1fr);
@@ -638,6 +669,11 @@ header {
     color: #ffffff;
   }
 
+  .about__link:hover {
+    color:var(--golden-hour-200)
+  }
+
+
   .site-header__link-icon {
     fill: #e5e7eb;
   }
@@ -647,9 +683,12 @@ header {
     color: #f3f4f6;
   }
 
-  .site-header__link-text span {
-    color: #9ca3af;
+   .site-header__link-text:hover,
+  .site-footer__link:hover {
+    color: var(--golden-hour-200);
   }
+
+ 
 
   .hero__title {
     color: rgba(255, 255, 255, 0.6);

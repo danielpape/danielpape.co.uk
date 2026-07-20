@@ -13,16 +13,14 @@ export default function Footer() {
         <div className="site-footer__identity">
           <h3 className="site-footer__heading">Who I Am</h3>
           <p className="site-footer__description">
-            A UX Designer crafting simple, accessible digital services.
+            A Lead Product Designer crafting simple, accessible digital
+            services.
           </p>
         </div>
 
         <div className="site-footer__socials">
           <h3 className="site-footer__heading">Socials</h3>
-          <a
-            href="mailto:hello@bydanielpape.com"
-            className="site-footer__link"
-          >
+          <a href="mailto:hello@bydanielpape.com" className="site-footer__link">
             Email
           </a>
           <a
