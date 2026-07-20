@@ -23,14 +23,7 @@ export default function Experience(props) {
                 </div>
               </div>
             </div>
-            <div className="experience__section">
-              <p className="experience__summary">
-                At Next, I lead user-centred design across key initiatives,
-                including replatforming the Customer Service platform, which
-                delivers £2.5m in annual savings, and major Checkout and My
-                Account projects such as Single Page Checkout.
-              </p>
-            </div>
+            <div className="experience__section"></div>
           </div>
         </div>
         <div className="experience__secondary">

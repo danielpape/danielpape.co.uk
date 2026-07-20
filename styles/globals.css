@@ -273,10 +273,16 @@ header {
 .about {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1024px;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .about__title,
