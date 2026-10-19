@@ -457,6 +457,46 @@ header {
   object-fit: cover;
 }
 
+.experience__project-result {
+  color: #71965a;
+}
+
+.experience__project-media--checkout .experience__slide {
+  animation-name: experience-checkout-crossfade, experience-pan-zoom;
+  animation-duration: 15s, 15s;
+}
+
+.experience__slide--checkout,
+.experience__slide--order-complete {
+  background: linear-gradient(152.337deg, #e3f9f9, #b6e0e0);
+}
+
+.experience__slide--checkout {
+  opacity: 1;
+}
+
+.experience__slide--order-complete {
+  animation-delay: -10s;
+}
+
+.experience__slide--checkout-workshop {
+  animation-delay: -5s;
+}
+
+.experience__checkout-image {
+  position: absolute;
+  left: 30.6062%;
+  top: 2.9396%;
+  width: 38.5157%;
+  height: auto;
+  aspect-ratio: 237 / 480;
+  object-fit: cover;
+}
+
+.experience__checkout-image--order-complete {
+  aspect-ratio: 237 / 479;
+}
+
 .experience__slideshow-toggle {
   position: absolute;
   right: 0.75rem;
@@ -495,14 +535,21 @@ header {
   to { transform: scale(1.06) translate(-0.5%, 0.5%); }
 }
 
+@keyframes experience-checkout-crossfade {
+  0%, 20%, 100% { opacity: 1; }
+  33.333333%, 86.666667% { opacity: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .experience__slide {
+  .experience__slide,
+  .experience__project-media--checkout .experience__slide {
     animation: none;
     transform: none;
     opacity: 0;
   }
 
-  .experience__slide--brand {
+  .experience__slide--brand,
+  .experience__project-media--checkout .experience__slide--checkout {
     opacity: 1;
   }
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NextCheckout from "./NextCheckout";
 
 export default function Experience(props) {
   const [isPaused, setIsPaused] = useState(false);
@@ -74,6 +75,7 @@ export default function Experience(props) {
             </button>
           </div>
         </article>
+        <NextCheckout />
         <div className="experience__secondary">
           <div className="experience__card">
             <div className="experience__overline">2014 - 2018</div>
