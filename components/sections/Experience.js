@@ -16,7 +16,7 @@ export default function Experience(props) {
             </p>
             <p className="experience__project-description">
               During a two-year secondment to Next’s Contact Centre team, I
-              shaped a new platform on Zendesk, saving over £2.5m per year. I
+              shaped a new platform on Zendesk, saving over £2.75m per year. I
               identified user needs from user interviews and defined the UX
               roadmap. From React prototypes to a bespoke component library and
               design system documentation.
