@@ -818,6 +818,12 @@ header {
   }
 }
 
+@media (max-width: 640px) {
+  .experience__card {
+    padding: 16px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background:
