@@ -1,31 +1,79 @@
+import { useState } from "react";
+
 export default function Experience(props) {
+  const [isPaused, setIsPaused] = useState(false);
+
   return (
     <section className="experience">
-      <h2 className="experience__title">Experience</h2>
+      <h2 className="experience__title">Work</h2>
       <div className="experience__items">
-        <div className="experience__card">
-          <div className="experience__primary">
-            <div className="experience__section">
-              <div className="experience__overline">2018 - Present</div>
-              <div className="experience__company">Next</div>
-              <div className="experience__group">
-                <div className="experience__info">
-                  Lead UX Designer{" "}
-                  <span className="experience__pill">2024 - present</span>
-                </div>
-                <div className="experience__info">
-                  Senior UX Designer{" "}
-                  <span className="experience__pill">2022 - 2024</span>
-                </div>
-                <div className="experience__info">
-                  UX Designer{" "}
-                  <span className="experience__pill">2018 - 2022</span>
-                </div>
-              </div>
-            </div>
-            <div className="experience__section"></div>
+        <article className="experience__card experience__card--project">
+          <div className="experience__project-content">
+            <h3 className="experience__project-title">SolveKit</h3>
+            <p className="experience__project-meta">
+              Contact Centre Platform, 2023-25
+            </p>
+            <p className="experience__project-description">
+              During a two-year secondment to Next’s Contact Centre team, I
+              shaped a new platform on Zendesk, saving over £2.5m per year. I
+              identified user needs from user interviews and defined the UX
+              roadmap. From React prototypes to a bespoke component library and
+              design system documentation.
+            </p>
           </div>
-        </div>
+          <div
+            className={`experience__project-media${isPaused ? " experience__project-media--paused" : ""}`}
+          >
+            <div className="experience__slide experience__slide--brand">
+              <img
+                className="experience__brand-image"
+                src="/images/solvekit-brand-slide.svg"
+                width="616"
+                height="409"
+                alt="SolveKit logo on a pale teal gradient."
+              />
+            </div>
+            <div className="experience__slide experience__slide--design-system">
+              <img
+                className="experience__design-system-image"
+                src="/images/solvekit-design-system.png"
+                width="2885"
+                height="1666"
+                alt="SolveKit design system with an order table, stock status buttons, an order action menu and teal colour swatches."
+              />
+            </div>
+            <div className="experience__slide experience__slide--icons">
+              <img
+                className="experience__project-image"
+                src="/images/solvekit-icon-comparison.svg"
+                width="515"
+                height="217"
+                alt="SolveKit icon comparisons in black and teal for Supplier, Store, Lorry, Parcel, Home, Desktop, Phone and Total Platform."
+              />
+            </div>
+            <div className="experience__slide experience__slide--team">
+              <img
+                className="experience__team-image"
+                src="/images/solvekit-team.png"
+                width="512"
+                height="341"
+                alt="Six team members standing together at an event."
+              />
+            </div>
+            <button
+              className="experience__slideshow-toggle"
+              type="button"
+              aria-label={
+                isPaused
+                  ? "Play SolveKit slideshow"
+                  : "Pause SolveKit slideshow"
+              }
+              onClick={() => setIsPaused(!isPaused)}
+            >
+              {isPaused ? "Play" : "Pause"}
+            </button>
+          </div>
+        </article>
         <div className="experience__secondary">
           <div className="experience__card">
             <div className="experience__overline">2014 - 2018</div>
